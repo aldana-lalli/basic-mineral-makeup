@@ -17,8 +17,8 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 80px;
     padding: 0 16px;
-    margin-top: 20px;
     text-align: center;
+    background-image: linear-gradient(to top, #F5E7DA, white );
 }
 
 .header__subtitulo {
