@@ -131,6 +131,24 @@ p {
     text-align: center;
 }
 
+.carousel-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 20px;
+}
+
+.d-block {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+
+
+
+
+
 .ojos__grid {
     display: grid;
     width: 800px;
@@ -565,23 +583,9 @@ p {
     border-radius: 5px;
 }
 
-.lista__nombre {
-    padding: 0 16px 10px 20px;
-    justify-content: left;
-}
 
-.lista__email {
-    padding: 0 16px 10px 20px;
-    justify-content: left;
-}
 
-.lista__comentario {
-    padding: 0 16px 10px 20px;
-}
 
-.lista__comentario--textarea {
-    justify-content: center;
-}
 
 .lista__acciones {
     padding: 0 16px 10px 20px;
