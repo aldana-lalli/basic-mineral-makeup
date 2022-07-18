@@ -131,23 +131,6 @@ p {
     text-align: center;
 }
 
-.carousel-inner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    margin-top: 20px;
-}
-
-.d-block {
-    border: 1px solid black;
-    border-radius: 5px;
-}
-
-
-
-
-
 
 .ojos__grid {
     display: grid;
