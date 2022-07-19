@@ -29,6 +29,13 @@ body {
     display: block;
 }
 
+hr {
+    border: 0;
+    height: 1px;
+    background: #000;
+    background-image: linear-gradient(to right, #ccc, #000, #ccc)
+}
+
 .header__acciones {
     list-style: none;
     display: flex;
@@ -36,10 +43,10 @@ body {
     justify-content: flex-end;
     flex-wrap: wrap;
     align-items: center;
+    margin-right: 16px;
 }
 
 .header__icono {
-    width: 20px;
     padding: 0 16px 16px 0;
     display: block;
     align-items: center;
@@ -575,13 +582,6 @@ p {
 }
 
 /* Pie de página */
-hr {
-    border: 0;
-    height: 1px;
-    background: #333;
-    background-image: linear-gradient(to right, #ccc, #333, #ccc)
-}
-
 .footer__pie {
     display: flex;
     align-content: center;
@@ -589,9 +589,10 @@ hr {
     justify-content: space-between;
 }
 
-.footer__pie--derechos {
+.h6 {
     font-family: 'Roboto', sans-serif;
-    padding: 20px 0 16px 16px;
+    padding: 16px 0 16px 16px;
+    font-size: small;
 }
 
 .footer__pie--redes {
@@ -600,12 +601,9 @@ hr {
     flex-direction: row;
     flex-wrap: wrap;
     align-self: flex-end;
+    margin-right: 16px;
 }
 
-.footer__pie--icono {
-    width: 20px;
-    padding: 16px 16px 16px 0;
-}
 
 /* MediaQuery de Celular */
 @media (min-width: 320px) and (max-width: 575px) {
@@ -744,7 +742,7 @@ hr {
     }
 
     .footer__pie--icono {
-    width: 14px;
+    width: 25px;
     }
 }
 
