@@ -597,7 +597,7 @@ p {
   .lista {
     width: 80vw; }
   .footer__pie--icono {
-    width: 25px; } }
+    width: 14px; } }
 
 /* MediaQuery de Tablet */
 @media (min-width: 576px) and (max-width: 992px) {
