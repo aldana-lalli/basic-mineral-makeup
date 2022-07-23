@@ -1,5 +1,5 @@
 <h1>B A S I C MINERAL MAKE-UP - Proyecto Coderhouse</h1>
-<p>Sitio de maquillaje pensado para el curso de Desarrollo Web</p>
+<p>Sitio Web de maquillaje pensado para el curso de Desarrollo Web</p>
 
 <h2>Tecnologías usadas</h2>
 <ul>
