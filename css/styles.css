@@ -17,7 +17,9 @@ body {
   font-size: 80px;
   padding: 0 16px;
   text-align: center;
-  background-image: linear-gradient(to top, #F5E7DA, white); }
+  background-image: linear-gradient(to top, #F5E7DA, white);
+  color: #000;
+  text-decoration: none; }
 
 .header__subtitulo {
   font-family: 'Montserrat', sans-serif;
@@ -25,12 +27,6 @@ body {
   padding: 2px 16px;
   text-align: center;
   display: block; }
-
-hr {
-  border: 0;
-  height: 1px;
-  background: #000;
-  background-image: linear-gradient(to right, #ccc, #000, #ccc); }
 
 .header__acciones {
   list-style: none;
@@ -51,7 +47,6 @@ hr {
   background-color: #F9F1EA;
   justify-content: space-between; }
 
-/* Lista de navegación */
 .header__lista {
   padding: 0 16px;
   font-size: 18px;
@@ -65,10 +60,15 @@ hr {
 .header__menu {
   padding: 20px;
   display: inline; }
+  .header__menu a:active {
+    color: black;
+    text-decoration: none; }
 
-.header__menu a {
-  color: black;
-  text-decoration: none; }
+hr {
+  border: 0;
+  height: 1px;
+  background: #000;
+  background-image: linear-gradient(to right, #ccc, #000, #ccc); }
 
 /* Contenido de la página */
 .principal {
@@ -76,34 +76,30 @@ hr {
   justify-content: center;
   flex-wrap: wrap;
   padding: 30px; }
-
-.principal__portada {
-  width: 800px;
-  height: 600px;
-  padding: 1px;
-  border: 1px solid black;
-  border-radius: 5px; }
+  .principal__portada {
+    width: 800px;
+    height: 600px;
+    padding: 1px;
+    border: 1px solid black;
+    border-radius: 5px; }
 
 .filosofia {
   display: flex; }
-
-.filosofia__titulo--F {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 27px;
-  text-align: center;
-  padding: 30px; }
-
-.filosofia__img {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap; }
-
-.filosofia__img--mineral {
-  width: 800px;
-  height: 500px;
-  padding: 1px;
-  border: 1px solid black;
-  border-radius: 5px; }
+  .filosofia__titulo--F {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 27px;
+    text-align: center;
+    padding: 30px; }
+  .filosofia__img {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+    .filosofia__img--mineral {
+      width: 800px;
+      height: 500px;
+      padding: 1px;
+      border: 1px solid black;
+      border-radius: 5px; }
 
 p {
   text-align: justify;
@@ -501,9 +497,8 @@ p {
   padding: 1em;
   border: 1px solid #454444;
   border-radius: 5px; }
-
-.lista__acciones {
-  padding: 0 16px 10px 20px; }
+  .lista__acciones {
+    padding: 0 16px 10px 20px; }
 
 /* Pie de página */
 .footer__pie {

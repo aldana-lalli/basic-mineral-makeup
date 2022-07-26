@@ -10,23 +10,71 @@ body {
 }
 
 /* Encabezado */
-.header__titulo {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 80px;
-    padding: 0 16px;
-    text-align: center;
-    background-image: linear-gradient(to top, #F5E7DA, white );
-}
+.header {
 
-.header__subtitulo {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 25px;
-    padding: 2px 16px;
-    text-align: center;
-    display: block;
+        &__titulo {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 80px;
+            padding: 0 16px;
+            text-align: center;
+            background-image: linear-gradient(to top, #F5E7DA, white );
+            color: #000;
+            text-decoration: none;
+        }
+    
+        &__subtitulo {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 25px;
+            padding: 2px 16px;
+            text-align: center;
+            display: block;
+        }
+    
+        &__acciones {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-right: 16px;
+        }
+    
+        &__icono {
+            padding: 0 16px 16px 0;
+            display: block;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+    
+        &__nav {
+            background-color: #F9F1EA;
+            justify-content: space-between;
+        }
+    
+        &__lista {
+            padding: 0 16px;
+            font-size: 18px;
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            text-align: center;
+            flex-wrap: wrap;
+        }
+
+        &__menu {
+            padding: 20px;
+            display: inline;
+    
+                a:active {
+                    color: black;
+                    text-decoration: none;
+        }
+    }
 }
 
 hr {
@@ -36,88 +84,45 @@ hr {
     background-image: linear-gradient(to right, #ccc, #000, #ccc)
 }
 
-.header__acciones {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-right: 16px;
-}
-
-.header__icono {
-    padding: 0 16px 16px 0;
-    display: block;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.header__nav {
-    background-color: #F9F1EA;
-    justify-content: space-between;
-}
-
-/* Lista de navegación */
-.header__lista {
-    padding: 0 16px;
-    font-size: 18px;
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
-    flex-wrap: wrap;
-}
-.header__menu {
-    padding: 20px;
-    display: inline;
-}
-
-.header__menu a {
-    color: black;
-    text-decoration: none;
-}
-
 /* Contenido de la página */
 .principal{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     padding: 30px;
-}
 
-.principal__portada {
-    width: 800px;
-    height: 600px;
-    padding: 1px;
-    border: 1px solid black;
-    border-radius: 5px;
+    &__portada {
+        width: 800px;
+        height: 600px;
+        padding: 1px;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
 }
 
 .filosofia {
     display: flex;
-}
 
-.filosofia__titulo--F {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 27px;
-    text-align: center;
-    padding: 30px;
-}
+    &__titulo--F {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 27px;
+        text-align: center;
+        padding: 30px;
+    }
+    
+    &__img{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
 
-.filosofia__img{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.filosofia__img--mineral {
-    width: 800px;
-    height: 500px;
-    padding: 1px;
-    border: 1px solid black;
-    border-radius: 5px;
+        &--mineral {
+            width: 800px;
+            height: 500px;
+            padding: 1px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+    }
 }
 
 p {
@@ -569,14 +574,10 @@ p {
     padding: 1em;
     border: 1px solid rgb(69, 68, 68);
     border-radius: 5px;
-}
 
-
-
-
-
-.lista__acciones {
-    padding: 0 16px 10px 20px;
+    &__acciones {
+        padding: 0 16px 10px 20px;
+    }
 }
 
 /* Pie de página */
