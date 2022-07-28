@@ -1,0 +1,28 @@
+.header {
+
+    &__nav {
+        background-color: $color-secundario;
+        justify-content: space-between;
+        }
+
+    &__lista {
+        padding: 0 16px;
+        font-size: 18px;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    &__menu {
+        padding: 20px;
+        display: inline;
+
+            a:active {
+                color: black;
+                text-decoration: none;
+            }   
+    }
+}

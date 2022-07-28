@@ -1,0 +1,275 @@
+
+/* MediaQuery de Celular */
+@media (min-width: 320px) and (max-width: 575px) {
+    .header {
+    height: auto;
+
+    &__titulo {
+        font-size: 55px;
+        }
+    
+    &__subtitulo {
+        font-size: 19px;
+        }
+    
+    &__icono {
+        width: 14px;
+        }
+    
+    &__nav {
+        flex-direction: column;
+        justify-content: center;
+        }
+    
+        &__lista {
+        flex-direction: column;
+        font-size: 14px;
+        padding: 5px;
+        }
+    }
+
+    .principal__portada {
+    width:300px;
+    height: 200px;
+}
+
+    .filosofia {
+    &__titulo--F {
+        font-size: 20px;
+        }
+        
+    &__img--mineral {
+        width: 80vw;
+        height: 200px;
+        }
+}
+
+    p {
+    font-size: small;
+    }
+
+    .productos__titulo--P {
+    font-size: 20px;
+    }
+
+    .ojos__grid {
+    width: 70vw;
+    height: 350vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-areas:"beige" 
+                        "rosa-viejo" 
+                        "oliva"
+                        "marron" 
+                        "celeste-gris" 
+                        "rosa"
+                        "bordeaux" 
+                        "pinceles" 
+                        "violeta";
+    }
+
+    .boton {
+    font-size: 10px;
+    width: 47px;
+    height: 20px;
+    }
+
+    .labios__grid {
+    width: 70vw;
+    height: 350vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-areas:"rosa-mate" 
+                        "rojo-mate" 
+                        "marron-mate"
+                        "rosa-cremoso" 
+                        "rojo-cremoso" 
+                        "nude-cremoso"
+                        "coral-pomo" 
+                        "rojo-pomo" 
+                        "violeta-pomo";
+    }
+
+    .rostro__grid {
+    width: 70vw;
+    height: 230vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:"tono-claro" 
+                        "tono-medio" 
+                        "tono-oscuro"
+                        "una-brocha" 
+                        "crema-rostro" 
+                        "dos-brochas";
+    }
+
+    .pomulos__grid {
+    width: 70vw;
+    height: 230vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:"rubor-naranja" "rubor-beige" "rubor-fucsia"
+                        "pomulos-coral" "pomulos-beige" "pomulos-rosa";
+    }
+
+    .preguntas {
+        &__titulo--Pf {
+            font-size: 20px;
+            }
+        
+        &__frecuentes--1 {
+            font-size: small;
+            }
+        
+        &__frecuentes--2 {
+            font-size: small;
+            }
+        
+        &__frecuentes--3 {
+            font-size: small;
+            }
+    }
+
+    .contacto__titulo--C {
+    font-size: 20px;
+    }
+
+    .lista {
+    width: 80vw;
+    }
+
+    .footer__pie--icono {
+    width: 14px;
+    }
+}
+
+/* MediaQuery de Tablet */
+@media (min-width: 576px) and (max-width: 992px) {
+    .header {
+    height: auto;
+
+    &__titulo {
+        font-size: 52px;
+    }
+
+    &__subtitulo {
+        font-size: 17px;
+    }
+
+    &__icono {
+        width: 14px;
+    }
+
+    &__nav {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    &__lista {
+        flex-direction: row;
+        justify-content: center;
+        font-size: 14px;
+        padding: 5px;
+    }
+}
+
+    .principal {
+        &__portada {
+            width: 550px;
+            height: 350px;
+        }
+    }
+
+    .filosofia {
+        &__titulo--F {
+            font-size: 18px;
+        }
+
+        &__img--mineral {
+            width: 90vw;
+            height: 300px;
+        }
+    }
+
+    p {
+    font-size: small;
+    }
+
+    .productos__titulo--P {
+        font-size: 18px;
+    }
+
+    .ojos__grid {
+    width: 500px;
+    height: 400px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:"beige rosa-viejo oliva"
+                        "marron celeste-gris rosa"
+                        "bordeaux pinceles violeta";
+    }
+
+    .boton {
+    font-size: 8px;
+    width: 40px;
+    height: 18px;
+    }
+
+    .labios__grid {
+    width: 500px;
+    height: 400px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:"rosa-mate rojo-mate marron-mate"
+                        "rosa-cremoso rojo-cremoso nude-cremoso"
+                        "coral-pomo rojo-pomo violeta-pomo";
+    }
+
+    .rostro__grid {
+    width: 500px;
+    height: 340px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:"tono-claro tono-medio tono-oscuro"
+                        "una-brocha crema-rostro dos-brochas";
+    }
+
+    .pomulos__grid {
+    width: 500px;
+    height: 340px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:"rubor-naranja rubor-beige rubor-fucsia"
+                        "pomulos-coral pomulos-beige pomulos-rosa";
+    }
+
+    .preguntas {
+        &__titulo--Pf {
+            font-size: 18px;
+            }
+        
+        &__frecuentes--1 {
+            font-size: small;
+            }
+        
+        &__frecuentes--2 {
+            font-size: small;
+            }
+        
+        &__frecuentes--3 {
+            font-size: small;
+            }
+    }
+
+    .contacto__titulo--C {
+    font-size: 18px;
+    }
+
+    .lista {
+    width: 70vw;
+    }
+
+    .footer__pie--icono {
+    width: 14px;
+    }
+}

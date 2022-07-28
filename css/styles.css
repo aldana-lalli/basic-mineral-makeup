@@ -1,48 +1,6 @@
 @charset "UTF-8";
-* {
-  margin: 0px;
-  padding: 0px;
-  /*FALTA ALGO?*/ }
-
-body {
-  background-color: #F5E7DA;
-  font-family: 'Roboto', sans-serif; }
-
-/* Encabezado */
-.header__titulo {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 80px;
-  padding: 0 16px;
-  text-align: center;
-  background-image: linear-gradient(to top, #F5E7DA, white);
-  color: #000;
-  text-decoration: none; }
-
-.header__subtitulo {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 25px;
-  padding: 2px 16px;
-  text-align: center;
-  display: block; }
-
-.header__acciones {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  flex-wrap: wrap;
-  align-items: center;
-  margin-right: 16px; }
-
-.header__icono {
-  padding: 0 16px 16px 0;
-  display: block;
-  align-items: center;
-  flex-wrap: wrap; }
-
+/* Colores */
+/* Letras */
 .header__nav {
   background-color: #F9F1EA;
   justify-content: space-between; }
@@ -64,481 +22,45 @@ body {
     color: black;
     text-decoration: none; }
 
-hr {
-  border: 0;
-  height: 1px;
-  background: #000;
-  background-image: linear-gradient(to right, #ccc, #000, #ccc); }
-
-/* Contenido de la página */
-.principal {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 30px; }
-  .principal__portada {
-    width: 800px;
-    height: 600px;
-    padding: 1px;
-    border: 1px solid black;
-    border-radius: 5px; }
-
-.filosofia {
-  display: flex; }
-  .filosofia__titulo--F {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 27px;
-    text-align: center;
-    padding: 30px; }
-  .filosofia__img {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; }
-    .filosofia__img--mineral {
-      width: 800px;
-      height: 500px;
-      padding: 1px;
-      border: 1px solid black;
-      border-radius: 5px; }
-
-p {
-  text-align: justify;
-  padding: 0 16px;
-  margin: 30px; }
-
-.productos__titulo--P {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 27px;
-  text-align: center;
-  padding: 30px; }
-
-.productos__titulo--items {
-  font-family: 'Roboto', sans-serif;
-  text-align: center; }
-
-.ojos__grid {
-  display: grid;
-  width: 800px;
-  height: 800px;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: "beige rosa-viejo oliva" "marron celeste-gris rosa" "bordeaux pinceles violeta";
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-left: auto;
-  margin-right: auto;
-  row-gap: 10px;
-  column-gap: 10px;
-  padding: 30px; }
-
-.beige {
-  grid-area: beige;
-  /* display: flex; */
-  background-image: url("../resources/ojos/beige.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 1px solid black;
-  border-radius: 5px; }
-
-.btn:hover {
-  color: #454444;
-  font-size: small;
-  width: 65px;
-  height: 25px;
-  border-radius: 5px;
-  background-color: whitesmoke; }
-
-.rosa-viejo {
-  grid-area: rosa-viejo;
-  background-image: url("../resources/ojos/rosa-viejo.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 1px solid black;
-  border-radius: 5px; }
-
-.oliva {
-  grid-area: oliva;
-  background-image: url("../resources/ojos/oliva.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 1px solid black;
-  border-radius: 5px; }
-
-.marron {
-  grid-area: marron;
-  background-image: url("../resources/ojos/marron.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 1px solid black;
-  border-radius: 5px; }
-
-.celeste-gris {
-  grid-area: celeste-gris;
-  background-image: url("../resources/ojos/celeste-gris.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 1px solid black;
-  border-radius: 5px; }
-
-.rosa {
-  grid-area: rosa;
-  background-image: url("../resources/ojos/rosa.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 1px solid black;
-  border-radius: 5px; }
-
-.bordeaux {
-  grid-area: bordeaux;
-  background-image: url("../resources/ojos/bordeaux.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 1px solid black;
-  border-radius: 5px; }
-
-.pinceles {
-  grid-area: pinceles;
-  background-image: url("../resources/ojos/pinceles.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 1px solid black;
-  border-radius: 5px; }
-
-.violeta {
-  grid-area: violeta;
-  background-image: url("../resources/ojos/violeta.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 1px solid black;
-  border-radius: 5px; }
-
-.labios__grid {
-  display: grid;
-  width: 800px;
-  height: 800px;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: "rosa-mate rojo-mate marron-mate" "rosa-cremoso rojo-cremoso nude-cremoso" "coral-pomo rojo-pomo violeta-pomo";
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-left: auto;
-  margin-right: auto;
-  row-gap: 10px;
-  column-gap: 10px;
-  padding: 30px; }
-
-.rosa-mate {
-  grid-area: rosa-mate;
-  background-image: url("../resources/labios/rosa-mate.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 1px solid black;
-  border-radius: 5px; }
-
-.rojo-mate {
-  grid-area: rojo-mate;
-  background-image: url("../resources/labios/rojo-mate.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 1px solid black;
-  border-radius: 5px; }
-
-.marron-mate {
-  grid-area: marron-mate;
-  background-image: url("../resources/labios/marron-mate.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 1px solid black;
-  border-radius: 5px; }
-
-.rosa-cremoso {
-  grid-area: rosa-cremoso;
-  background-image: url("../resources/labios/rosa-cremoso.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 1px solid black;
-  border-radius: 5px; }
-
-.rojo-cremoso {
-  grid-area: rojo-cremoso;
-  background-image: url("../resources/labios/rojo-cremoso.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 1px solid black;
-  border-radius: 5px; }
-
-.nude-cremoso {
-  grid-area: nude-cremoso;
-  background-image: url("../resources/labios/nude-cremoso.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 1px solid black;
-  border-radius: 5px; }
-
-.coral-pomo {
-  grid-area: coral-pomo;
-  background-image: url("../resources/labios/coral-pomo.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 1px solid black;
-  border-radius: 5px; }
-
-.rojo-pomo {
-  grid-area: rojo-pomo;
-  background-image: url("../resources/labios/rojo-pomo.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 1px solid black;
-  border-radius: 5px; }
-
-.violeta-pomo {
-  grid-area: violeta-pomo;
-  background-image: url("../resources/labios/violeta-pomo.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 1px solid black;
-  border-radius: 5px; }
-
-.rostro__grid {
-  display: grid;
-  width: 800px;
-  height: 542px;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "tono-claro tono-medio tono-oscuro" "una-brocha crema-rostro dos-brochas";
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  row-gap: 10px;
-  column-gap: 10px;
-  padding: 30px; }
-
-.tono-claro {
-  grid-area: tono-claro;
-  background-image: url("../resources/rostro/claro.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 1px solid black;
-  border-radius: 5px; }
-
-.tono-medio {
-  grid-area: tono-medio;
-  background-image: url("../resources/rostro/medio.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 1px solid black;
-  border-radius: 5px; }
-
-.tono-oscuro {
-  grid-area: tono-oscuro;
-  background-image: url("../resources/rostro/oscuro.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 1px solid black;
-  border-radius: 5px; }
-
-.una-brocha {
-  grid-area: una-brocha;
-  background-image: url("../resources/rostro/brocha-uno.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 1px solid black;
-  border-radius: 5px; }
-
-.crema-rostro {
-  grid-area: crema-rostro;
-  background-image: url("../resources/rostro/crema.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 1px solid black;
-  border-radius: 5px; }
-
-.dos-brochas {
-  grid-area: dos-brochas;
-  background-image: url("../resources/rostro/brocha-dos.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 1px solid black;
-  border-radius: 5px; }
-
-.pomulos__grid {
-  display: grid;
-  width: 800px;
-  height: 542px;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "rubor-naranja rubor-beige rubor-fucsia" "pomulos-coral pomulos-beige pomulos-rosa";
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
-  row-gap: 10px;
-  column-gap: 10px;
-  padding: 30px; }
-
-.rubor-naranja {
-  grid-area: rubor-naranja;
-  background-image: url("../resources/pomulos/naranja.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 1px solid black;
-  border-radius: 5px; }
-
-.rubor-beige {
-  grid-area: rubor-beige;
-  background-image: url("../resources/pomulos/beige.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 1px solid black;
-  border-radius: 5px; }
-
-.rubor-fucsia {
-  grid-area: rubor-fucsia;
-  background-image: url("../resources/pomulos/fucsia.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 1px solid black;
-  border-radius: 5px; }
-
-.pomulos-coral {
-  grid-area: pomulos-coral;
-  background-image: url("../resources/pomulos/coral-pomo.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 1px solid black;
-  border-radius: 5px; }
-
-.pomulos-beige {
-  grid-area: pomulos-beige;
-  background-image: url("../resources/pomulos/beige-pomo.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 1px solid black;
-  border-radius: 5px; }
-
-.pomulos-rosa {
-  grid-area: pomulos-rosa;
-  background-image: url("../resources/pomulos/rosa-pomo.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 1px solid black;
-  border-radius: 5px; }
-
-.preguntas__titulo {
-  display: flex;
-  justify-content: center;
-  padding: 30px; }
-
-.preguntas__titulo--Pf {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 27px; }
-
-.preguntas__frecuentes {
-  padding: 0px 16px;
-  margin: 30px;
-  flex-wrap: wrap; }
-
-.preguntas__frecuentes--1 {
-  text-align: left; }
-
-.preguntas__frecuentes--2 {
-  text-align: left; }
-
-.preguntas__frecuentes--3 {
-  text-align: left; }
-
-.contacto__titulo {
-  display: flex;
-  justify-content: center;
-  padding: 30px; }
-
-.contacto__titulo--C {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 27px; }
-
-.lista {
-  margin: 16px auto 40px auto;
-  width: 400px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  padding: 1em;
-  border: 1px solid #454444;
-  border-radius: 5px; }
-  .lista__acciones {
-    padding: 0 16px 10px 20px; }
-
-/* Pie de página */
+/* Colores */
+/* Letras */
 .footer__pie {
   display: flex;
   align-content: center;
   flex-wrap: wrap;
   justify-content: space-between; }
+  .footer__pie--redes {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-self: flex-end;
+    justify-content: center;
+    padding: 5px;
+    margin-right: 16px;
+    margin-bottom: 20px; }
 
 .h6 {
   font-family: 'Roboto', sans-serif;
   font-size: small; }
 
-.footer__pie--redes {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-self: flex-end;
-  justify-content: center;
-  padding: 5px;
-  margin-right: 16px;
-  margin-bottom: 20px; }
-
 /* MediaQuery de Celular */
 @media (min-width: 320px) and (max-width: 575px) {
   .header {
     height: auto; }
-  .header__titulo {
-    font-size: 55px; }
-  .header__subtitulo {
-    font-size: 19px; }
-  .header__icono {
-    width: 14px; }
-  .header__nav {
-    flex-direction: column;
-    justify-content: center; }
-  .header__lista {
-    flex-direction: column;
-    font-size: 14px;
-    padding: 5px; }
+    .header__titulo {
+      font-size: 55px; }
+    .header__subtitulo {
+      font-size: 19px; }
+    .header__icono {
+      width: 14px; }
+    .header__nav {
+      flex-direction: column;
+      justify-content: center; }
+    .header__lista {
+      flex-direction: column;
+      font-size: 14px;
+      padding: 5px; }
   .principal__portada {
     width: 300px;
     height: 200px; }
@@ -598,20 +120,20 @@ p {
 @media (min-width: 576px) and (max-width: 992px) {
   .header {
     height: auto; }
-  .header__titulo {
-    font-size: 52px; }
-  .header__subtitulo {
-    font-size: 17px; }
-  .header__icono {
-    width: 14px; }
-  .header__nav {
-    flex-direction: row;
-    justify-content: center; }
-  .header__lista {
-    flex-direction: row;
-    justify-content: center;
-    font-size: 14px;
-    padding: 5px; }
+    .header__titulo {
+      font-size: 52px; }
+    .header__subtitulo {
+      font-size: 17px; }
+    .header__icono {
+      width: 14px; }
+    .header__nav {
+      flex-direction: row;
+      justify-content: center; }
+    .header__lista {
+      flex-direction: row;
+      justify-content: center;
+      font-size: 14px;
+      padding: 5px; }
   .principal__portada {
     width: 550px;
     height: 350px; }
@@ -666,3 +188,446 @@ p {
     width: 70vw; }
   .footer__pie--icono {
     width: 14px; } }
+
+* {
+  margin: 0px;
+  padding: 0px; }
+
+body {
+  background-color: #F5E7DA;
+  font-family: "Roboto", sans-serif; }
+
+/* Encabezado */
+.header__titulo {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: "Montserrat", sans-serif;
+  font-size: 80px;
+  padding: 0 16px;
+  text-align: center;
+  background-image: linear-gradient(to top, #F5E7DA, white);
+  color: #000;
+  text-decoration: none; }
+
+.header__subtitulo {
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  padding: 2px 16px;
+  text-align: center;
+  display: block; }
+
+.header__acciones {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-right: 16px; }
+
+.header__icono {
+  padding: 0 16px 16px 0;
+  display: block;
+  align-items: center;
+  flex-wrap: wrap; }
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #000;
+  background-image: linear-gradient(to right, #ccc, #000, #ccc); }
+
+/* Contenido de la página */
+.principal {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 30px; }
+  .principal__portada {
+    width: 800px;
+    height: 600px;
+    padding: 1px;
+    border: 1px solid black;
+    border-radius: 5px; }
+
+.filosofia {
+  display: flex; }
+  .filosofia__titulo--F {
+    font-family: "Montserrat", sans-serif;
+    font-size: 27px;
+    text-align: center;
+    padding: 30px; }
+  .filosofia__img {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+    .filosofia__img--mineral {
+      width: 800px;
+      height: 500px;
+      padding: 1px;
+      border: 1px solid black;
+      border-radius: 5px; }
+
+p {
+  text-align: justify;
+  padding: 0 16px;
+  margin: 30px; }
+
+.productos__titulo--P {
+  font-family: "Montserrat", sans-serif;
+  font-size: 27px;
+  text-align: center;
+  padding: 30px; }
+
+.productos__titulo--items {
+  font-family: "Roboto", sans-serif;
+  text-align: center; }
+
+.ojos__grid {
+  display: grid;
+  width: 800px;
+  height: 800px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "beige rosa-viejo oliva" "marron celeste-gris rosa" "bordeaux pinceles violeta";
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  row-gap: 10px;
+  column-gap: 10px;
+  padding: 30px; }
+  .ojos__grid .beige {
+    grid-area: beige;
+    background-image: url("../resources/ojos/beige.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    border-radius: 5px; }
+  .ojos__grid .rosa-viejo {
+    grid-area: rosa-viejo;
+    background-image: url("../resources/ojos/rosa-viejo.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    border-radius: 5px; }
+  .ojos__grid .oliva {
+    grid-area: oliva;
+    background-image: url("../resources/ojos/oliva.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    border-radius: 5px; }
+  .ojos__grid .marron {
+    grid-area: marron;
+    background-image: url("../resources/ojos/marron.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    border-radius: 5px; }
+  .ojos__grid .celeste-gris {
+    grid-area: celeste-gris;
+    background-image: url("../resources/ojos/celeste-gris.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    border-radius: 5px; }
+  .ojos__grid .rosa {
+    grid-area: rosa;
+    background-image: url("../resources/ojos/rosa.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    border-radius: 5px; }
+  .ojos__grid .bordeaux {
+    grid-area: bordeaux;
+    background-image: url("../resources/ojos/bordeaux.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    border-radius: 5px; }
+  .ojos__grid .pinceles {
+    grid-area: pinceles;
+    background-image: url("../resources/ojos/pinceles.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    border-radius: 5px; }
+  .ojos__grid .violeta {
+    grid-area: violeta;
+    background-image: url("../resources/ojos/violeta.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    border-radius: 5px; }
+
+.btn:hover {
+  color: #454444;
+  font-size: small;
+  width: 65px;
+  height: 25px;
+  border-radius: 5px;
+  background-color: whitesmoke; }
+
+.labios__grid {
+  display: grid;
+  width: 800px;
+  height: 800px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "rosa-mate rojo-mate marron-mate" "rosa-cremoso rojo-cremoso nude-cremoso" "coral-pomo rojo-pomo violeta-pomo";
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  row-gap: 10px;
+  column-gap: 10px;
+  padding: 30px; }
+  .labios__grid .rosa-mate {
+    grid-area: rosa-mate;
+    background-image: url("../resources/labios/rosa-mate.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    border-radius: 5px; }
+  .labios__grid .rojo-mate {
+    grid-area: rojo-mate;
+    background-image: url("../resources/labios/rojo-mate.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    border-radius: 5px; }
+  .labios__grid .marron-mate {
+    grid-area: marron-mate;
+    background-image: url("../resources/labios/marron-mate.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    border-radius: 5px; }
+  .labios__grid .rosa-cremoso {
+    grid-area: rosa-cremoso;
+    background-image: url("../resources/labios/rosa-cremoso.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    border-radius: 5px; }
+  .labios__grid .rojo-cremoso {
+    grid-area: rojo-cremoso;
+    background-image: url("../resources/labios/rojo-cremoso.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    border-radius: 5px; }
+  .labios__grid .nude-cremoso {
+    grid-area: nude-cremoso;
+    background-image: url("../resources/labios/nude-cremoso.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    border-radius: 5px; }
+  .labios__grid .coral-pomo {
+    grid-area: coral-pomo;
+    background-image: url("../resources/labios/coral-pomo.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    border-radius: 5px; }
+  .labios__grid .rojo-pomo {
+    grid-area: rojo-pomo;
+    background-image: url("../resources/labios/rojo-pomo.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    border-radius: 5px; }
+  .labios__grid .violeta-pomo {
+    grid-area: violeta-pomo;
+    background-image: url("../resources/labios/violeta-pomo.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    border-radius: 5px; }
+
+.rostro__grid {
+  display: grid;
+  width: 800px;
+  height: 542px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "tono-claro tono-medio tono-oscuro" "una-brocha crema-rostro dos-brochas";
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  row-gap: 10px;
+  column-gap: 10px;
+  padding: 30px; }
+  .rostro__grid .tono-claro {
+    grid-area: tono-claro;
+    background-image: url("../resources/rostro/claro.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    border-radius: 5px; }
+  .rostro__grid .tono-medio {
+    grid-area: tono-medio;
+    background-image: url("../resources/rostro/medio.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    border-radius: 5px; }
+  .rostro__grid .tono-oscuro {
+    grid-area: tono-oscuro;
+    background-image: url("../resources/rostro/oscuro.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    border-radius: 5px; }
+  .rostro__grid .una-brocha {
+    grid-area: una-brocha;
+    background-image: url("../resources/rostro/brocha-uno.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    border-radius: 5px; }
+  .rostro__grid .crema-rostro {
+    grid-area: crema-rostro;
+    background-image: url("../resources/rostro/crema.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    border-radius: 5px; }
+  .rostro__grid .dos-brochas {
+    grid-area: dos-brochas;
+    background-image: url("../resources/rostro/brocha-dos.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    border-radius: 5px; }
+
+.pomulos__grid {
+  display: grid;
+  width: 800px;
+  height: 542px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "rubor-naranja rubor-beige rubor-fucsia" "pomulos-coral pomulos-beige pomulos-rosa";
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  row-gap: 10px;
+  column-gap: 10px;
+  padding: 30px; }
+  .pomulos__grid .rubor-naranja {
+    grid-area: rubor-naranja;
+    background-image: url("../resources/pomulos/naranja.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    border-radius: 5px; }
+  .pomulos__grid .rubor-beige {
+    grid-area: rubor-beige;
+    background-image: url("../resources/pomulos/beige.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    border-radius: 5px; }
+  .pomulos__grid .rubor-fucsia {
+    grid-area: rubor-fucsia;
+    background-image: url("../resources/pomulos/fucsia.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    border-radius: 5px; }
+  .pomulos__grid .pomulos-coral {
+    grid-area: pomulos-coral;
+    background-image: url("../resources/pomulos/coral-pomo.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    border-radius: 5px; }
+  .pomulos__grid .pomulos-beige {
+    grid-area: pomulos-beige;
+    background-image: url("../resources/pomulos/beige-pomo.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    border-radius: 5px; }
+  .pomulos__grid .pomulos-rosa {
+    grid-area: pomulos-rosa;
+    background-image: url("../resources/pomulos/rosa-pomo.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    border-radius: 5px; }
+
+.preguntas__titulo {
+  display: flex;
+  justify-content: center;
+  padding: 30px; }
+  .preguntas__titulo--Pf {
+    font-family: "Montserrat", sans-serif;
+    font-size: 27px; }
+
+.preguntas__frecuentes {
+  padding: 0px 16px;
+  margin: 30px;
+  flex-wrap: wrap; }
+  .preguntas__frecuentes--1 {
+    text-align: left; }
+  .preguntas__frecuentes--2 {
+    text-align: left; }
+  .preguntas__frecuentes--3 {
+    text-align: left; }
+
+.contacto__titulo {
+  display: flex;
+  justify-content: center;
+  padding: 30px; }
+  .contacto__titulo--C {
+    font-family: "Montserrat", sans-serif;
+    font-size: 27px; }
+
+.lista {
+  margin: 16px auto 40px auto;
+  width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 1em;
+  border: 1px solid #454444;
+  border-radius: 5px; }
+  .lista__acciones {
+    padding: 0 16px 10px 20px; }
