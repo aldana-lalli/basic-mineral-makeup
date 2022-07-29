@@ -2,7 +2,6 @@
 @import "nav";
 @import "variables";
 @import "footer";
-@import "mediaqueries";
 
 * {
     margin: 0px;
@@ -504,7 +503,7 @@ p {
         display: flex;
         justify-content: center;
         padding: 30px;
-        
+
         &--Pf {
             font-family: $font-titulo;
             font-size: 27px
@@ -556,3 +555,5 @@ p {
         padding: 0 16px 10px 20px;
     }
 }
+
+@import "mediaqueries";
