@@ -135,17 +135,25 @@ hr {
     border-radius: 5px; }
 
 .filosofia {
-  display: flex; }
+  display: flex;
+  height: auto;
+  width: auto;
+  margin-left: 50px;
+  margin-bottom: 40px; }
   .filosofia__img {
-    display: flex;
+    width: 500vw;
+    background-image: url("../resources/filosofia/mineral.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 1px;
+    border: 1px solid black;
+    border-radius: 5px; }
+  .filosofia__parrafo {
+    align-self: center; }
+  .filosofia__intro {
     justify-content: center;
-    flex-wrap: wrap; }
-    .filosofia__img--mineral {
-      width: 800px;
-      height: 500px;
-      padding: 1px;
-      border: 1px solid black;
-      border-radius: 5px; }
+    text-align: center; }
 
 p {
   text-align: justify;
