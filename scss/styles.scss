@@ -75,22 +75,19 @@ hr {
 
 .filosofia {
     display: flex;
+    height: auto;
 
     &__titulo--F {
         @extend .titulos;
     }
     &__img {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-
-        &--mineral {
-            width: 800px;
-            height: 500px;
-            padding: 1px;
-            border: 1px solid black;
-            border-radius: 5px;
-        }
+        width: 100vw;
+        background-image: url('../resources/filosofia/mineral.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+    &__parrafo {
+        align-self: center;
     }
 }
 

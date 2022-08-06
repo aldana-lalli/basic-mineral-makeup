@@ -363,10 +363,10 @@ p {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(9, 1fr);
     grid-template-areas: "beige"  "rosa-viejo"  "oliva" "marron"  "celeste-gris"  "rosa" "bordeaux"  "pinceles"  "violeta"; }
-  .boton {
-    font-size: 10px;
-    width: 47px;
-    height: 20px; }
+  .btn {
+    font-size: 7px;
+    width: 30px;
+    height: 15px; }
   .labios__grid {
     width: 70vw;
     height: 350vh;
@@ -436,8 +436,8 @@ p {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: "beige rosa-viejo oliva" "marron celeste-gris rosa" "bordeaux pinceles violeta"; }
-  .boton {
-    font-size: 8px;
+  .btn {
+    font-size: 10px;
     width: 40px;
     height: 18px; }
   .labios__grid {
