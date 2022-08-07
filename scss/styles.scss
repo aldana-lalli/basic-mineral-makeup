@@ -22,12 +22,13 @@ body {
             flex-wrap: wrap;
             font-family: $font-titulo;
             font-size: 80px;
-            padding: 0 16px;
+            padding: 20px 0 5px 0;
             text-align: center;
             background-image: linear-gradient(to top, $color-principal, white );
             color: #000;
             text-decoration: none;
         }
+        
         &__subtitulo {
             font-family: $font-titulo;
             font-size: 25px;
@@ -40,19 +41,29 @@ body {
             display: flex;
             @include flex (row, flex-end, center);
             flex-wrap: wrap;
-            margin-right: 16px;
+            margin: 15px;
         }
-        &__icono {
-            padding: 0 16px 16px 0;
+        &__menu {
+            color: #000;
+            font-weight: bolder;
+        }
+        &__menu:hover {
+            transform: scale(1.15, 1.15);
+            transition: all 0.5s;
+        }
+        .bi {
+            padding: 10px;
+            margin: 10px;
             display: block;
             align-items: center;
+            justify-content: space-between; 
             flex-wrap: wrap;
         }
     }
 
 hr {
     border: 0;
-    height: 1px;
+    min-height: 1px;
     background: #000;
     background-image: linear-gradient(to right, #ccc, #000, #ccc)
 }
@@ -82,6 +93,7 @@ hr {
 
     &__titulo--F {
         @extend .titulos;
+        font-style: italic;
     }
     &__img {
         width: 500vw;
@@ -91,7 +103,8 @@ hr {
         background-position: center;
         padding: 1px;
         border: 1px solid black;
-        border-radius: 5px
+        border-radius: 5px;
+        object-fit: cover;
     }
     &__parrafo {
         align-self: center;
@@ -111,6 +124,7 @@ p {
 .productos__titulo {
     &--P {
         @extend .titulos;
+        font-style: italic;
     }
 
     &--items {
@@ -195,13 +209,30 @@ p {
     }
 }
 
-.btn:hover{
+button {
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+    align-items: center;
+    align-self: flex-end;
+}
+.btn:hover {
     color: rgb(69, 68, 68);
     font-size: small;
     width: 65px;
     height: 25px;
     border-radius: 5px;
     background-color: whitesmoke
+}
+
+span {
+    display: flex;
+}
+
+.color {
+    justify-content: center;
+    align-content: flex-start;
+    align-items: flex-start;
 }
 
 .labios__grid {
@@ -283,7 +314,7 @@ p {
 .rostro__grid {
     display: grid;
     width: 800px;
-    height: 542px;
+    height: 550px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas:"tono-claro tono-medio tono-oscuro"
@@ -339,7 +370,7 @@ p {
 .pomulos__grid {
     display: grid;
     width: 800px;
-    height: 542px;
+    height: 550px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas:"rubor-naranja rubor-beige rubor-fucsia"
@@ -399,7 +430,8 @@ p {
 
         &--Pf {
             font-family: $font-titulo;
-            font-size: 27px
+            font-size: 27px;
+            font-style: italic;
         }
     }
     &__frecuentes {
@@ -429,24 +461,37 @@ p {
 
         &--C {
             font-family: $font-titulo;
-            font-size: 27px
+            font-size: 27px;
+            font-style: italic;
+        }
+
+    &__img {
+        width: 350px;
+        background-image: url('../resources/grupo-brochas.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 1px;
+        border: 1px solid black;
+        border-radius: 5px;
+        object-fit: cover;
         }
     }
 }
 
+.texto {
+    font-size: 17px;
+}
+
 .lista {
-    margin: 16px auto 40px auto;
-    width: 400px;
+    margin: 16px 40px 30px 40px;
+    width: 450px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     padding: 1em;
     border: 1px solid rgb(69, 68, 68);
     border-radius: 5px;
-
-    &__acciones {
-        padding: 0 16px 10px 20px;
-    }
 }
 
 @import "mediaqueries";

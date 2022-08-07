@@ -87,7 +87,7 @@ body {
   flex-wrap: wrap;
   font-family: "Montserrat", sans-serif;
   font-size: 80px;
-  padding: 0 16px;
+  padding: 20px 0 5px 0;
   text-align: center;
   background-image: linear-gradient(to top, #F5E7DA, white);
   color: #000;
@@ -107,17 +107,27 @@ body {
   justify-content: flex-end;
   align-items: center;
   flex-wrap: wrap;
-  margin-right: 16px; }
+  margin: 15px; }
 
-.header__icono {
-  padding: 0 16px 16px 0;
+.header__menu {
+  color: #000;
+  font-weight: bolder; }
+
+.header__menu:hover {
+  transform: scale(1.15, 1.15);
+  transition: all 0.5s; }
+
+.header .bi {
+  padding: 10px;
+  margin: 10px;
   display: block;
   align-items: center;
+  justify-content: space-between;
   flex-wrap: wrap; }
 
 hr {
   border: 0;
-  height: 1px;
+  min-height: 1px;
   background: #000;
   background-image: linear-gradient(to right, #ccc, #000, #ccc); }
 
@@ -140,6 +150,8 @@ hr {
   width: auto;
   margin-left: 50px;
   margin-bottom: 40px; }
+  .filosofia__titulo--F {
+    font-style: italic; }
   .filosofia__img {
     width: 500vw;
     background-image: url("../resources/filosofia/mineral.jpg");
@@ -148,7 +160,8 @@ hr {
     background-position: center;
     padding: 1px;
     border: 1px solid black;
-    border-radius: 5px; }
+    border-radius: 5px;
+    object-fit: cover; }
   .filosofia__parrafo {
     align-self: center; }
   .filosofia__intro {
@@ -159,6 +172,9 @@ p {
   text-align: justify;
   padding: 0 16px;
   margin: 30px; }
+
+.productos__titulo--P {
+  font-style: italic; }
 
 .productos__titulo--items {
   font-family: "Roboto", sans-serif;
@@ -199,6 +215,13 @@ p {
     grid-area: violeta;
     background-image: url("../resources/ojos/violeta.jpg"); }
 
+button {
+  display: flex;
+  justify-content: center;
+  align-content: flex-end;
+  align-items: center;
+  align-self: flex-end; }
+
 .btn:hover {
   color: #454444;
   font-size: small;
@@ -206,6 +229,14 @@ p {
   height: 25px;
   border-radius: 5px;
   background-color: whitesmoke; }
+
+span {
+  display: flex; }
+
+.color {
+  justify-content: center;
+  align-content: flex-start;
+  align-items: flex-start; }
 
 .labios__grid {
   display: grid;
@@ -245,7 +276,7 @@ p {
 .rostro__grid {
   display: grid;
   width: 800px;
-  height: 542px;
+  height: 550px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "tono-claro tono-medio tono-oscuro" "una-brocha crema-rostro dos-brochas";
@@ -273,7 +304,7 @@ p {
 .pomulos__grid {
   display: grid;
   width: 800px;
-  height: 542px;
+  height: 550px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "rubor-naranja rubor-beige rubor-fucsia" "pomulos-coral pomulos-beige pomulos-rosa";
@@ -303,7 +334,8 @@ p {
   padding: 30px; }
   .preguntas__titulo--Pf {
     font-family: "Montserrat", sans-serif;
-    font-size: 27px; }
+    font-size: 27px;
+    font-style: italic; }
 
 .preguntas__frecuentes {
   padding: 0px 16px;
@@ -322,19 +354,31 @@ p {
   padding: 30px; }
   .contacto__titulo--C {
     font-family: "Montserrat", sans-serif;
-    font-size: 27px; }
+    font-size: 27px;
+    font-style: italic; }
+  .contacto__titulo__img {
+    width: 350px;
+    background-image: url("../resources/grupo-brochas.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 1px;
+    border: 1px solid black;
+    border-radius: 5px;
+    object-fit: cover; }
+
+.texto {
+  font-size: 17px; }
 
 .lista {
-  margin: 16px auto 40px auto;
-  width: 400px;
+  margin: 16px 40px 30px 40px;
+  width: 450px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   padding: 1em;
   border: 1px solid #454444;
   border-radius: 5px; }
-  .lista__acciones {
-    padding: 0 16px 10px 20px; }
 
 /* MediaQuery de Celular */
 @media (min-width: 320px) and (max-width: 575px) {
@@ -358,8 +402,8 @@ p {
     height: 200px; }
   .filosofia__titulo--F {
     font-size: 20px; }
-  .filosofia__img--mineral {
-    width: 80vw;
+  .filosofia__img {
+    width: 70vw;
     height: 200px; }
   p {
     font-size: small; }
@@ -431,7 +475,7 @@ p {
     height: 350px; }
   .filosofia__titulo--F {
     font-size: 18px; }
-  .filosofia__img--mineral {
+  .filosofia__img {
     width: 90vw;
     height: 300px; }
   p {
