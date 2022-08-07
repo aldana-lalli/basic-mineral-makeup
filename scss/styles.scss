@@ -28,7 +28,6 @@ body {
             color: #000;
             text-decoration: none;
         }
-        
         &__subtitulo {
             font-family: $font-titulo;
             font-size: 25px;
@@ -42,6 +41,9 @@ body {
             @include flex (row, flex-end, center);
             flex-wrap: wrap;
             margin: 15px;
+        }
+        &__nav {
+            display: flex;
         }
         &__menu {
             color: #000;
@@ -61,11 +63,25 @@ body {
         }
     }
 
+.container-fluid {
+    display: flex;
+    flex-wrap: inherit;
+}    
+
+.navbar-toggler {
+    justify-content: flex-end;
+}
+
 hr {
     border: 0;
     min-height: 1px;
     background: #000;
     background-image: linear-gradient(to right, #ccc, #000, #ccc)
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: flex-end;
 }
 
 /* Contenido de la página */
@@ -454,6 +470,9 @@ span {
 }
 
 .contacto {
+    display: flex;
+    justify-content: center;
+    
     &__titulo {
         display: flex;
         justify-content: center;
@@ -466,32 +485,46 @@ span {
         }
 
     &__img {
-        width: 350px;
-        background-image: url('../resources/grupo-brochas.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
+        display: flex;
+        justify-content: center;
+        width: 200px;
+        background-size: contain;
+        margin: 40px;
         padding: 1px;
         border: 1px solid black;
         border-radius: 5px;
-        object-fit: cover;
         }
     }
 }
 
-.texto {
-    font-size: 17px;
-}
-
 .lista {
     margin: 16px 40px 30px 40px;
-    width: 450px;
+    width: 500px;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: flex-end;
     flex-direction: column;
     padding: 1em;
     border: 1px solid rgb(69, 68, 68);
     border-radius: 5px;
+}
+
+.img__fluid {   
+    height: auto;
+    }
+
+.footer__pie {
+    display: flex;
+    align-self: center;
+
+    &--redes {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.redes {
+    width: 30px;
+    padding: 5px;
 }
 
 @import "mediaqueries";
