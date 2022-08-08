@@ -40,7 +40,7 @@ body {
             display: flex;
             @include flex (row, flex-end, center);
             flex-wrap: wrap;
-            margin: 15px;
+            margin: 20px;
         }
         &__nav {
             display: flex;
@@ -129,6 +129,10 @@ hr {
         justify-content: center;
         text-align: center;
     }
+}
+
+.img__fluid {
+    height: auto;
 }
 
 p {
@@ -497,11 +501,22 @@ span {
     }
 }
 
-.lista {
-    margin: 16px 40px 30px 40px;
-    width: 500px;
+.texto {
     display: flex;
-    justify-content: flex-end;
+
+    &__texto {
+        justify-content: center;
+        align-self: center;
+        align-items: center;
+        align-content: center;
+    }
+}
+
+.lista {
+    margin: auto;
+    width: 800px;
+    display: flex;
+    justify-content: center;
     flex-direction: column;
     padding: 1em;
     border: 1px solid rgb(69, 68, 68);
@@ -512,6 +527,10 @@ span {
     height: auto;
     }
 
+.form-label {
+    padding-top: 10px;
+}
+
 .footer__pie {
     display: flex;
     align-self: center;
@@ -520,6 +539,12 @@ span {
         justify-content: center;
         align-items: center;
     }
+}
+
+.derechos {
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
 }
 
 .redes {

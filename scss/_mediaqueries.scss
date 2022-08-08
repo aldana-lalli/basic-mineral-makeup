@@ -1,7 +1,7 @@
 
 /* MediaQuery de Celular */
 @media (min-width: 320px) and (max-width: 575px) {
-    .header {
+    header {
     height: auto;
 
     &__titulo {
@@ -39,8 +39,8 @@
         }
         
     &__img {
-        width: 70vw;
-        height: 200px;
+        width: 200px;
+        height: auto;
         }
 }
 
@@ -53,7 +53,7 @@
     }
 
     .ojos__grid {
-    width: 70vw;
+    width: 300px;
     height: 350vh;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(9, 1fr);
@@ -75,7 +75,7 @@
     }
 
     .labios__grid {
-    width: 70vw;
+    width: 300px;
     height: 350vh;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(9, 1fr);
@@ -91,7 +91,7 @@
     }
 
     .rostro__grid {
-    width: 70vw;
+    width: 350px;
     height: 230vh;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
@@ -104,7 +104,7 @@
     }
 
     .pomulos__grid {
-    width: 70vw;
+    width: 350px;
     height: 230vh;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
@@ -145,7 +145,7 @@
 
 /* MediaQuery de Tablet */
 @media (min-width: 576px) and (max-width: 992px) {
-    .header {
+    header {
     height: auto;
 
     &__titulo {
