@@ -182,7 +182,7 @@ hr {
     justify-content: center;
     text-align: center; }
 
-.img__fluid {
+.img-fluid {
   height: auto; }
 
 p {
@@ -387,7 +387,8 @@ span {
       border-radius: 5px; }
 
 .texto {
-  display: flex; }
+  display: flex;
+  justify-content: center; }
   .texto__texto {
     justify-content: center;
     align-self: center;
