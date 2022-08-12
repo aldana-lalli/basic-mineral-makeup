@@ -34,6 +34,8 @@ body {
             padding: 2px 16px;
             text-align: center;
             display: block;
+            color: #000;
+            text-decoration: none;
         }
         &__acciones {
             list-style: none;
@@ -44,6 +46,7 @@ body {
         }
         &__nav {
             display: flex;
+            
         }
         &__menu {
             color: #000;
@@ -65,7 +68,7 @@ body {
 
 .container-fluid {
     display: flex;
-    flex-wrap: inherit;
+    justify-content: flex-end;
 }    
 
 .navbar-toggler {
@@ -77,11 +80,6 @@ hr {
     min-height: 1px;
     background: #000;
     background-image: linear-gradient(to right, #ccc, #000, #ccc)
-}
-
-.container-fluid {
-    display: flex;
-    justify-content: flex-end;
 }
 
 /* Contenido de la página */
@@ -542,9 +540,10 @@ span {
 }
 
 .derechos {
+    font-size: small;
     justify-content: center;
     align-items: center;
-    margin: 25px;
+    margin: 1em;
 }
 
 .redes {

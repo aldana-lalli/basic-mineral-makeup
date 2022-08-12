@@ -22,6 +22,9 @@
     color: black;
     text-decoration: none; }
 
+.container-fluid {
+  justify-content: flex-end; }
+
 /* EXTEND */
 .background-centrado, .ojos__grid .beige, .ojos__grid .rosa-viejo, .ojos__grid .oliva, .ojos__grid .marron, .ojos__grid .celeste-gris, .ojos__grid .rosa, .ojos__grid .bordeaux, .ojos__grid .pinceles, .ojos__grid .violeta, .labios__grid .rosa-mate, .labios__grid .rojo-mate, .labios__grid .marron-mate, .labios__grid .rosa-cremoso, .labios__grid .rojo-cremoso, .labios__grid .nude-cremoso, .labios__grid .coral-pomo, .labios__grid .rojo-pomo, .labios__grid .violeta-pomo, .rostro__grid .tono-claro, .rostro__grid .tono-medio, .rostro__grid .tono-oscuro, .rostro__grid .una-brocha, .rostro__grid .crema-rostro, .rostro__grid .dos-brochas, .pomulos__grid .rubor-naranja, .pomulos__grid .rubor-beige, .pomulos__grid .rubor-fucsia, .pomulos__grid .pomulos-coral, .pomulos__grid .pomulos-beige, .pomulos__grid .pomulos-rosa {
   background-position: center;
@@ -98,7 +101,9 @@ body {
   font-size: 25px;
   padding: 2px 16px;
   text-align: center;
-  display: block; }
+  display: block;
+  color: #000;
+  text-decoration: none; }
 
 .header__acciones {
   list-style: none;
@@ -130,7 +135,7 @@ body {
 
 .container-fluid {
   display: flex;
-  flex-wrap: inherit; }
+  justify-content: flex-end; }
 
 .navbar-toggler {
   justify-content: flex-end; }
@@ -140,10 +145,6 @@ hr {
   min-height: 1px;
   background: #000;
   background-image: linear-gradient(to right, #ccc, #000, #ccc); }
-
-.container-fluid {
-  display: flex;
-  justify-content: flex-end; }
 
 /* Contenido de la página */
 .principal {
@@ -182,7 +183,7 @@ hr {
     justify-content: center;
     text-align: center; }
 
-.img-fluid {
+.img__fluid {
   height: auto; }
 
 p {
@@ -387,8 +388,7 @@ span {
       border-radius: 5px; }
 
 .texto {
-  display: flex;
-  justify-content: center; }
+  display: flex; }
   .texto__texto {
     justify-content: center;
     align-self: center;
@@ -419,9 +419,10 @@ span {
     align-items: center; }
 
 .derechos {
+  font-size: small;
   justify-content: center;
   align-items: center;
-  margin: 25px; }
+  margin: 1em; }
 
 .redes {
   width: 30px;
