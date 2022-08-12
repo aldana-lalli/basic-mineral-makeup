@@ -388,8 +388,11 @@ span {
       border-radius: 5px; }
 
 .texto {
-  display: flex; }
+  margin: 1em;
+  display: flex;
+  justify-content: center; }
   .texto__texto {
+    display: flex;
     justify-content: center;
     align-self: center;
     align-items: center;

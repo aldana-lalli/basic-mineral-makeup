@@ -46,7 +46,6 @@ body {
         }
         &__nav {
             display: flex;
-            
         }
         &__menu {
             color: #000;
@@ -500,9 +499,12 @@ span {
 }
 
 .texto {
+    margin: 1em;
     display: flex;
+    justify-content: center;
 
     &__texto {
+        display: flex;
         justify-content: center;
         align-self: center;
         align-items: center;
