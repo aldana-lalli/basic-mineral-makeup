@@ -1,13 +1,16 @@
 .footer__pie {
     display: flex;
+    align-self: center;
     align-content: center;
     flex-wrap: wrap;
     justify-content: space-between;
 
     &--redes {
-        list-style: none;
         display: flex;
         flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
         flex-wrap: wrap;
         align-self: flex-end;
         justify-content: center;
@@ -17,8 +20,19 @@
     }
 }
 
+.derechos {
+    font-size: small;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+}
+
+.redes {
+    width: 1.75em;
+    padding: 5px;
+}
+
 .h6 {
     font-family: 'Roboto', sans-serif;
-    
     font-size: small;
 }

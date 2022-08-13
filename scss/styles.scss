@@ -21,7 +21,7 @@ body {
             justify-content: center;
             flex-wrap: wrap;
             font-family: $font-titulo;
-            font-size: 80px;
+            font-size: 4.25rem;
             padding: 20px 0 5px 0;
             text-align: center;
             background-image: linear-gradient(to top, $color-principal, white );
@@ -30,7 +30,7 @@ body {
         }
         &__subtitulo {
             font-family: $font-titulo;
-            font-size: 25px;
+            font-size: 1.6rem;
             padding: 2px 16px;
             text-align: center;
             display: block;
@@ -99,25 +99,22 @@ hr {
 
 .filosofia {
     display: flex;
-    height: auto;
-    width: auto;
-    margin-left: 50px;
-    margin-bottom: 40px;
+    flex-direction: row;
+    margin: 0 30px 0 30px;
 
     &__titulo--F {
         @extend .titulos;
         font-style: italic;
     }
     &__img {
-        width: 500vw;
-        background-image: url('../resources/filosofia/mineral.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
+        width: 60vw;
         padding: 1px;
         border: 1px solid black;
         border-radius: 5px;
         object-fit: cover;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
     }
     &__parrafo {
         align-self: center;
@@ -126,10 +123,6 @@ hr {
         justify-content: center;
         text-align: center;
     }
-}
-
-.img__fluid {
-    height: auto;
 }
 
 p {
@@ -529,28 +522,6 @@ span {
 
 .form-label {
     padding-top: 10px;
-}
-
-.footer__pie {
-    display: flex;
-    align-self: center;
-
-    &--redes {
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-.derechos {
-    font-size: small;
-    justify-content: center;
-    align-items: center;
-    margin: 1em;
-}
-
-.redes {
-    width: 30px;
-    padding: 5px;
 }
 
 @import "mediaqueries";

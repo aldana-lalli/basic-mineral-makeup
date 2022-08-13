@@ -34,13 +34,17 @@
 }
 
     .filosofia {
+        display: flex;
+
     &__titulo--F {
         font-size: 20px;
         }
         
     &__img {
-        width: 200px;
-        height: auto;
+        width: auto;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
         }
 }
 
@@ -136,10 +140,6 @@
 
     .lista {
     width: 80vw;
-    }
-
-    .footer__pie--icono {
-    width: 14px;
     }
 }
 
@@ -267,9 +267,5 @@
 
     .lista {
     width: 70vw;
-    }
-
-    .footer__pie--icono {
-    width: 14px;
     }
 }
