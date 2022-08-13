@@ -71,17 +71,18 @@
     align-self: flex-end;
     justify-content: center;
     padding: 5px;
-    margin-right: 16px;
-    margin-bottom: 20px; }
+    margin-right: 2em;
+    margin-bottom: 0.5em; }
 
 .derechos {
   font-size: small;
   justify-content: center;
   align-items: center;
-  margin: 1em; }
+  padding: 1em;
+  margin-left: 2em; }
 
 .redes {
-  width: 1.75em;
+  width: 2em;
   padding: 5px; }
 
 .h6 {
@@ -176,6 +177,8 @@ hr {
   display: flex;
   flex-direction: row;
   margin: 0 30px 0 30px; }
+  .filosofia__article {
+    flex-direction: row; }
   .filosofia__titulo--F {
     font-style: italic; }
   .filosofia__img {
@@ -183,7 +186,6 @@ hr {
     border: 1px solid black;
     border-radius: 5px;
     object-fit: cover;
-    justify-content: center;
     align-items: center;
     margin-left: auto;
     margin-right: auto; }
