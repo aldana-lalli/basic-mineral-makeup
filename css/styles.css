@@ -186,6 +186,7 @@ hr {
     border: 1px solid black;
     border-radius: 5px;
     object-fit: cover;
+    justify-content: center;
     align-items: center;
     margin-left: auto;
     margin-right: auto; }
@@ -211,10 +212,24 @@ p {
   font-family: "Roboto", sans-serif;
   text-align: center; }
 
+.color {
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: center;
+  margin: 3px 0 0 4px; }
+
+.btn:hover {
+  color: #454444;
+  font-size: small;
+  width: 65px;
+  height: 25px;
+  border-radius: 5px;
+  background-color: whitesmoke; }
+
 .ojos__grid {
   display: grid;
-  width: 800px;
-  height: 800px;
+  width: 70vw;
+  height: 120vh;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas: "beige rosa-viejo oliva" "marron celeste-gris rosa" "bordeaux pinceles violeta"; }
@@ -246,33 +261,10 @@ p {
     grid-area: violeta;
     background-image: url("../resources/ojos/violeta.jpg"); }
 
-button {
-  display: flex;
-  justify-content: center;
-  align-content: flex-end;
-  align-items: center;
-  align-self: flex-end; }
-
-.btn:hover {
-  color: #454444;
-  font-size: small;
-  width: 65px;
-  height: 25px;
-  border-radius: 5px;
-  background-color: whitesmoke; }
-
-span {
-  display: flex; }
-
-.color {
-  justify-content: center;
-  align-content: flex-start;
-  align-items: flex-start; }
-
 .labios__grid {
   display: grid;
-  width: 800px;
-  height: 800px;
+  width: 70vw;
+  height: 130vh;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas: "rosa-mate rojo-mate marron-mate" "rosa-cremoso rojo-cremoso nude-cremoso" "coral-pomo rojo-pomo violeta-pomo"; }
@@ -306,8 +298,8 @@ span {
 
 .rostro__grid {
   display: grid;
-  width: 800px;
-  height: 550px;
+  width: 70vw;
+  height: 100vh;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "tono-claro tono-medio tono-oscuro" "una-brocha crema-rostro dos-brochas";
@@ -334,8 +326,8 @@ span {
 
 .pomulos__grid {
   display: grid;
-  width: 800px;
-  height: 550px;
+  width: 70vw;
+  height: 90vh;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "rubor-naranja rubor-beige rubor-fucsia" "pomulos-coral pomulos-beige pomulos-rosa";
@@ -461,8 +453,8 @@ span {
   .productos__titulo--P {
     font-size: 20px; }
   .ojos__grid {
-    width: 300px;
-    height: 350vh;
+    width: 80vw;
+    height: 370vh;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(9, 1fr);
     grid-template-areas: "beige"  "rosa-viejo"  "oliva" "marron"  "celeste-gris"  "rosa" "bordeaux"  "pinceles"  "violeta"; }
@@ -471,20 +463,20 @@ span {
     width: 30px;
     height: 15px; }
   .labios__grid {
-    width: 300px;
-    height: 350vh;
+    width: 80vw;
+    height: 370vh;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(9, 1fr);
     grid-template-areas: "rosa-mate"  "rojo-mate"  "marron-mate" "rosa-cremoso"  "rojo-cremoso"  "nude-cremoso" "coral-pomo"  "rojo-pomo"  "violeta-pomo"; }
   .rostro__grid {
-    width: 350px;
-    height: 230vh;
+    width: 80vw;
+    height: 330vh;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
     grid-template-areas: "tono-claro"  "tono-medio"  "tono-oscuro" "una-brocha"  "crema-rostro"  "dos-brochas"; }
   .pomulos__grid {
-    width: 350px;
-    height: 230vh;
+    width: 80vw;
+    height: 320vh;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
     grid-template-areas: "rubor-naranja" "rubor-beige" "rubor-fucsia" "pomulos-coral" "pomulos-beige" "pomulos-rosa"; }
@@ -532,30 +524,30 @@ span {
   .productos__titulo--P {
     font-size: 18px; }
   .ojos__grid {
-    width: 500px;
-    height: 400px;
+    width: 100vw;
+    height: 100vh;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: "beige rosa-viejo oliva" "marron celeste-gris rosa" "bordeaux pinceles violeta"; }
   .btn {
-    font-size: 10px;
+    font-size: 0.5rem;
     width: 40px;
     height: 18px; }
   .labios__grid {
-    width: 500px;
-    height: 400px;
+    width: 100vw;
+    height: 120vh;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: "rosa-mate rojo-mate marron-mate" "rosa-cremoso rojo-cremoso nude-cremoso" "coral-pomo rojo-pomo violeta-pomo"; }
   .rostro__grid {
-    width: 500px;
-    height: 340px;
+    width: 100vw;
+    height: 100vh;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "tono-claro tono-medio tono-oscuro" "una-brocha crema-rostro dos-brochas"; }
   .pomulos__grid {
-    width: 500px;
-    height: 340px;
+    width: 100vw;
+    height: 100vh;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "rubor-naranja rubor-beige rubor-fucsia" "pomulos-coral pomulos-beige pomulos-rosa"; }

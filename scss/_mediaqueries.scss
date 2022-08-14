@@ -57,8 +57,8 @@
     }
 
     .ojos__grid {
-    width: 300px;
-    height: 350vh;
+    width: 80vw;
+    height: 370vh;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(9, 1fr);
     grid-template-areas:"beige" 
@@ -79,8 +79,8 @@
     }
 
     .labios__grid {
-    width: 300px;
-    height: 350vh;
+    width: 80vw;
+    height: 370vh;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(9, 1fr);
     grid-template-areas:"rosa-mate" 
@@ -95,8 +95,8 @@
     }
 
     .rostro__grid {
-    width: 350px;
-    height: 230vh;
+    width: 80vw;
+    height: 330vh;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
     grid-template-areas:"tono-claro" 
@@ -108,8 +108,8 @@
     }
 
     .pomulos__grid {
-    width: 350px;
-    height: 230vh;
+    width: 80vw;
+    height: 320vh;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
     grid-template-areas:"rubor-naranja" "rubor-beige" "rubor-fucsia"
@@ -200,8 +200,8 @@
     }
 
     .ojos__grid {
-    width: 500px;
-    height: 400px;
+    width: 100vw;
+    height: 100vh;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas:"beige rosa-viejo oliva"
@@ -210,14 +210,14 @@
     }
 
     .btn {
-    font-size: 10px;
+    font-size: 0.5rem;
     width: 40px;
     height: 18px;
     }
 
     .labios__grid {
-    width: 500px;
-    height: 400px;
+    width: 100vw;
+    height: 120vh;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas:"rosa-mate rojo-mate marron-mate"
@@ -226,8 +226,8 @@
     }
 
     .rostro__grid {
-    width: 500px;
-    height: 340px;
+    width: 100vw;
+    height: 100vh;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas:"tono-claro tono-medio tono-oscuro"
@@ -235,8 +235,8 @@
     }
 
     .pomulos__grid {
-    width: 500px;
-    height: 340px;
+    width: 100vw;
+    height: 100vh;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas:"rubor-naranja rubor-beige rubor-fucsia"
