@@ -74,12 +74,16 @@ body {
     justify-content: flex-end;
 }
 
-hr {
-    border: 0;
+.linea {
+    border-top: 1px;
+    border-bottom: 1px;
     min-height: 1px;
-    background: #000;
-    background-image: linear-gradient(to right, #ccc, #000, #ccc)
+    padding: 0;
+    margin: 0 auto 0 auto;
+    background: gray;
+    background-image: linear-gradient(to right, #ccc, #000, #ccc);
 }
+
 
 /* Contenido de la página */
 .principal {
