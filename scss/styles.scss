@@ -104,12 +104,22 @@ body {
 .filosofia {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     margin: 0 30px 0 30px;
 
-    &__titulo--F {
+    &__titulo {
         @extend .titulos;
         font-style: italic;
     }
+}
+
+.card {
+    display: flex;
+    padding: 1px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-left: 120px;
+    margin-right: 120px;
 }
 
 .col-md-4 {
@@ -119,9 +129,12 @@ body {
 .card-body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    text-align: justify;
     background-color: $color-secundario;
+}
+
+.card-title {
+    display: flex;
+    justify-content: center;
 }
 
 .productos__titulo {
