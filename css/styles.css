@@ -418,6 +418,9 @@ body {
 .form-label {
   padding-top: 10px; }
 
+.form-control {
+  background-color: #fff6f0; }
+
 /* MediaQuery de Celular */
 @media (min-width: 320px) and (max-width: 575px) {
   header {
