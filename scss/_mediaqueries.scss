@@ -30,7 +30,7 @@
 
     .principal__portada {
     width:300px;
-    height: 200px;
+    height: auto;
 }
 
     .filosofia {
@@ -165,7 +165,7 @@
     .principal {
         &__portada {
             width: 550px;
-            height: 350px;
+            height: auto;
         }
     }
 
