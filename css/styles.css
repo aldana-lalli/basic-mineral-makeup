@@ -213,15 +213,14 @@ body {
 
 .color {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-content: center;
   align-items: center;
-  margin: 5px;
-  background-color: #F5E7DA; }
+  margin: 5px; }
 
-.btn {
+.boton {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-content: center;
   align-items: center;
   margin: 5px; }
@@ -234,28 +233,37 @@ body {
 .ojos__grid {
   display: grid;
   width: 70vw;
-  height: auto;
+  height: 130vh;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: "beige oliva rosa-viejo" "marron celeste-gris rosa" "bordeaux pinceles violeta"; }
+  grid-template-areas: "beige rosa-viejo oliva" "marron celeste-gris rosa" "bordeaux pinceles violeta"; }
   .ojos__grid .beige {
-    grid-area: beige; }
+    grid-area: beige;
+    background-image: url(../resources/ojos/beige.jpg); }
   .ojos__grid .rosa-viejo {
-    grid-area: rosa-viejo; }
+    grid-area: rosa-viejo;
+    background-image: url(../resources/ojos/rosa-viejo.jpg); }
   .ojos__grid .oliva {
-    grid-area: oliva; }
+    grid-area: oliva;
+    background-image: url(../resources/ojos/oliva.jpg); }
   .ojos__grid .marron {
-    grid-area: marron; }
+    grid-area: marron;
+    background-image: url(../resources/ojos/marron.jpg); }
   .ojos__grid .celeste-gris {
-    grid-area: celeste-gris; }
+    grid-area: celeste-gris;
+    background-image: url(../resources/ojos/celeste-gris.jpg); }
   .ojos__grid .rosa {
-    grid-area: rosa; }
+    grid-area: rosa;
+    background-image: url(../resources/ojos/rosa.jpg); }
   .ojos__grid .bordeaux {
-    grid-area: bordeaux; }
+    grid-area: bordeaux;
+    background-image: url(../resources/ojos/bordeaux.jpg); }
   .ojos__grid .pinceles {
-    grid-area: pinceles; }
+    grid-area: pinceles;
+    background-image: url(../resources/ojos/pinceles.png); }
   .ojos__grid .violeta {
-    grid-area: violeta; }
+    grid-area: violeta;
+    background-image: url(../resources/ojos/violeta.jpg); }
 
 .labios__grid {
   display: grid;
@@ -265,23 +273,32 @@ body {
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas: "rosa-mate rojo-mate marron-mate" "rosa-cremoso rojo-cremoso nude-cremoso" "coral-pomo rojo-pomo violeta-pomo"; }
   .labios__grid .rosa-mate {
-    grid-area: rosa-mate; }
+    grid-area: rosa-mate;
+    background-image: url(../resources/labios/rosa-mate.png); }
   .labios__grid .rojo-mate {
-    grid-area: rojo-mate; }
+    grid-area: rojo-mate;
+    background-image: url(../resources/labios/rojo-mate.png); }
   .labios__grid .marron-mate {
-    grid-area: marron-mate; }
+    grid-area: marron-mate;
+    background-image: url(../resources/labios/marron-mate.png); }
   .labios__grid .rosa-cremoso {
-    grid-area: rosa-cremoso; }
+    grid-area: rosa-cremoso;
+    background-image: url(../resources/labios/rosa-cremoso.png); }
   .labios__grid .rojo-cremoso {
-    grid-area: rojo-cremoso; }
+    grid-area: rojo-cremoso;
+    background-image: url(../resources/labios/rojo-cremoso.png); }
   .labios__grid .nude-cremoso {
-    grid-area: nude-cremoso; }
+    grid-area: nude-cremoso;
+    background-image: url(../resources/labios/nude-cremoso.png); }
   .labios__grid .coral-pomo {
-    grid-area: coral-pomo; }
+    grid-area: coral-pomo;
+    background-image: url(../resources/labios/coral-pomo.png); }
   .labios__grid .rojo-pomo {
-    grid-area: rojo-pomo; }
+    grid-area: rojo-pomo;
+    background-image: url(../resources/labios/rojo-pomo.png); }
   .labios__grid .violeta-pomo {
-    grid-area: violeta-pomo; }
+    grid-area: violeta-pomo;
+    background-image: url(../resources/labios/violeta-pomo.png); }
 
 .rostro__grid {
   display: grid;
@@ -291,17 +308,23 @@ body {
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "tono-claro tono-medio tono-oscuro" "una-brocha crema-rostro dos-brochas"; }
   .rostro__grid .tono-claro {
-    grid-area: tono-claro; }
+    grid-area: tono-claro;
+    background-image: url(../resources/rostro/claro.png); }
   .rostro__grid .tono-medio {
-    grid-area: tono-medio; }
+    grid-area: tono-medio;
+    background-image: url(../resources/rostro/medio.png); }
   .rostro__grid .tono-oscuro {
-    grid-area: tono-oscuro; }
+    grid-area: tono-oscuro;
+    background-image: url(../resources/rostro/oscuro.png); }
   .rostro__grid .una-brocha {
-    grid-area: una-brocha; }
+    grid-area: una-brocha;
+    background-image: url(../resources/rostro/brocha-uno.png); }
   .rostro__grid .crema-rostro {
-    grid-area: crema-rostro; }
+    grid-area: crema-rostro;
+    background-image: url(../resources/rostro/crema.png); }
   .rostro__grid .dos-brochas {
-    grid-area: dos-brochas; }
+    grid-area: dos-brochas;
+    background-image: url(../resources/rostro/brocha-dos.png); }
 
 .pomulos__grid {
   display: grid;
@@ -311,17 +334,23 @@ body {
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "rubor-naranja rubor-beige rubor-fucsia" "pomulos-coral pomulos-beige pomulos-rosa"; }
   .pomulos__grid .rubor-naranja {
-    grid-area: rubor-naranja; }
+    grid-area: rubor-naranja;
+    background-image: url(../resources/pomulos/naranja.png); }
   .pomulos__grid .rubor-beige {
-    grid-area: rubor-beige; }
+    grid-area: rubor-beige;
+    background-image: url(../resources/pomulos/beige.png); }
   .pomulos__grid .rubor-fucsia {
-    grid-area: rubor-fucsia; }
+    grid-area: rubor-fucsia;
+    background-image: url(../resources/pomulos/fucsia.png); }
   .pomulos__grid .pomulos-coral {
-    grid-area: pomulos-coral; }
+    grid-area: pomulos-coral;
+    background-image: url(../resources/pomulos/coral-pomo.png); }
   .pomulos__grid .pomulos-beige {
-    grid-area: pomulos-beige; }
+    grid-area: pomulos-beige;
+    background-image: url(../resources/pomulos/beige-pomo.png); }
   .pomulos__grid .pomulos-rosa {
-    grid-area: pomulos-rosa; }
+    grid-area: pomulos-rosa;
+    background-image: url(../resources/pomulos/rosa-pomo.png); }
 
 .preguntas__titulo {
   display: flex;

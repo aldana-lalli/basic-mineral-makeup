@@ -151,19 +151,19 @@ body {
 
 .color {
     display: flex;
-    justify-content: space-between;
-    align-content: center;
-    align-items: center;
-    margin: 5px;
-    background-color: $color-principal;
-}
-
-.btn {
-    display: flex;
     justify-content: center;
     align-content: center;
     align-items: center;
     margin: 5px;
+}
+
+.boton {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    margin: 5px;
+
 }
 
 .btn:hover {
@@ -175,10 +175,10 @@ body {
 .ojos__grid {
     display: grid;
     width: 70vw;
-    height: auto;
+    height: 130vh;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas:"beige oliva rosa-viejo"
+    grid-template-areas:"beige rosa-viejo oliva"
                         "marron celeste-gris rosa"
                         "bordeaux pinceles violeta";
     @extend .flex;
@@ -186,54 +186,63 @@ body {
 
     .beige {
         grid-area: beige;
+        background-image: url(../resources/ojos/beige.jpg);
         @extend .background-centrado;
         @extend .border;
     }
 
     .rosa-viejo {
         grid-area: rosa-viejo;
+        background-image: url(../resources/ojos/rosa-viejo.jpg);
         @extend .background-centrado;
         @extend .border;
     }
     
     .oliva {
         grid-area: oliva;
+        background-image: url(../resources/ojos/oliva.jpg);
         @extend .background-centrado;
         @extend .border;
     }
     
     .marron {
         grid-area: marron;
+        background-image: url(../resources/ojos/marron.jpg);
         @extend .background-centrado;
         @extend .border;
     }
     
     .celeste-gris {
         grid-area: celeste-gris;
+        background-image: url(../resources/ojos/celeste-gris.jpg);
         @extend .background-centrado;
         @extend .border;
     }
 
     .rosa {
         grid-area: rosa;
+        background-image: url(../resources/ojos/rosa.jpg);
         @extend .background-centrado;
         @extend .border;
     }
     
     .bordeaux {
         grid-area: bordeaux;
+        background-image: url(../resources/ojos/bordeaux.jpg);
         @extend .background-centrado;
         @extend .border;
     }
 
     .pinceles {
         grid-area: pinceles;
+        background-image: url(../resources/ojos/pinceles.png);
         @extend .background-centrado;
         @extend .border;
     }
     
     .violeta {
         grid-area: violeta;
+        background-image: url(../resources/ojos/violeta.jpg);
         @extend .background-centrado;
         @extend .border;
     }
@@ -253,54 +262,63 @@ body {
 
     .rosa-mate {
         grid-area: rosa-mate;
+        background-image: url(../resources/labios/rosa-mate.png);
         @extend .background-centrado;
         @extend .border;
     }
     
     .rojo-mate {
         grid-area: rojo-mate;
+        background-image: url(../resources/labios/rojo-mate.png);
         @extend .background-centrado;
         @extend .border;
     }
     
     .marron-mate {
         grid-area: marron-mate;
+        background-image: url(../resources/labios/marron-mate.png);
         @extend .background-centrado;
         @extend .border;
     }
     
     .rosa-cremoso {
         grid-area: rosa-cremoso;
+        background-image: url(../resources/labios/rosa-cremoso.png);
         @extend .background-centrado;
         @extend .border;
     }
 
     .rojo-cremoso {
         grid-area: rojo-cremoso;
+        background-image: url(../resources/labios/rojo-cremoso.png);
         @extend .background-centrado;
         @extend .border;
     }
     
     .nude-cremoso {
         grid-area: nude-cremoso;
+        background-image: url(../resources/labios/nude-cremoso.png);
         @extend .background-centrado;
         @extend .border;
     }
 
     .coral-pomo {
         grid-area: coral-pomo;
+        background-image: url(../resources/labios/coral-pomo.png);
         @extend .background-centrado;
         @extend .border;
     }
     
     .rojo-pomo {
         grid-area: rojo-pomo;
+        background-image: url(../resources/labios/rojo-pomo.png);
         @extend .background-centrado;
         @extend .border;
     }
 
     .violeta-pomo {
         grid-area: violeta-pomo;
+        background-image: url(../resources/labios/violeta-pomo.png);
         @extend .background-centrado;
         @extend .border;
     }
@@ -319,36 +337,42 @@ body {
 
     .tono-claro {
         grid-area: tono-claro;
+        background-image: url(../resources/rostro/claro.png);
         @extend .background-centrado;
         @extend .border;
     }
 
     .tono-medio {
         grid-area: tono-medio;
+        background-image: url(../resources/rostro/medio.png);
         @extend .background-centrado;
         @extend .border;
     }
 
     .tono-oscuro {
         grid-area: tono-oscuro;
+        background-image: url(../resources/rostro/oscuro.png);
         @extend .background-centrado;
         @extend .border;
     }
 
     .una-brocha {
         grid-area: una-brocha;
+        background-image: url(../resources/rostro/brocha-uno.png);
         @extend .background-centrado;
         @extend .border;
     }
 
     .crema-rostro {
         grid-area: crema-rostro;
+        background-image: url(../resources/rostro/crema.png);
         @extend .background-centrado;
         @extend .border;
     }
 
     .dos-brochas {
         grid-area: dos-brochas;
+        background-image: url(../resources/rostro/brocha-dos.png);
         @extend .background-centrado;
         @extend .border;
     }
@@ -367,36 +391,42 @@ body {
 
     .rubor-naranja {
         grid-area: rubor-naranja;
+        background-image: url(../resources/pomulos/naranja.png);
         @extend .background-centrado;
         @extend .border;
     }
 
     .rubor-beige {
         grid-area: rubor-beige;
+        background-image: url(../resources/pomulos/beige.png);
         @extend .background-centrado;
         @extend .border;
     }
 
     .rubor-fucsia {
         grid-area: rubor-fucsia;
+        background-image: url(../resources/pomulos/fucsia.png);
         @extend .background-centrado;
         @extend .border;
     }
 
     .pomulos-coral {
         grid-area: pomulos-coral;
+        background-image: url(../resources/pomulos/coral-pomo.png);
         @extend .background-centrado;
         @extend .border;
     }
 
     .pomulos-beige {
         grid-area: pomulos-beige;
+        background-image: url(../resources/pomulos/beige-pomo.png);
         @extend .background-centrado;
         @extend .border;
     }
 
     .pomulos-rosa {
         grid-area: pomulos-rosa;
+        background-image: url(../resources/pomulos/rosa-pomo.png);
         @extend .background-centrado;
         @extend .border;
     }
