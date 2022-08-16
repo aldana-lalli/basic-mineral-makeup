@@ -95,9 +95,9 @@ body {
     &__portada {
         width: 800px;
         height: auto;
-        padding: 1px;
         border: 1px solid black;
         border-radius: 5px;
+        margin-bottom: 15px;
     }
 }
 
@@ -113,28 +113,14 @@ body {
     }
 }
 
-.card {
-    display: flex;
-    padding: 1px;
+.imagen {
     border: 1px solid black;
     border-radius: 5px;
-    margin-left: 120px;
-    margin-right: 120px;
 }
 
-.col-md-4 {
-    background-color: $color-secundario;
-}
-
-.card-body {
-    display: flex;
-    flex-direction: column;
-    background-color: $color-secundario;
-}
-
-.card-title {
-    display: flex;
-    justify-content: center;
+p {
+    text-align: justify;
+    align-items: center;
 }
 
 .productos__titulo {
@@ -514,7 +500,7 @@ body {
     padding: 1em;
     border: 1px solid rgb(69, 68, 68);
     border-radius: 5px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .img__fluid {   
