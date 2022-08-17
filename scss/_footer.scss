@@ -1,20 +1,24 @@
 .footer__pie {
+    width: 100vw;
     display: flex;
-    align-self: center;
-    align-content: center;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+
+
 
     &--redes {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
         align-items: center;
         list-style: none;
-        flex-wrap: wrap;
-        align-self: flex-end;
-        justify-content: center;
-        margin-right: 1rem;
-        margin-bottom: 0.5rem;
+        margin-left: 30px;
+        margin-top: 10px;
     }
 }
 
@@ -23,18 +27,20 @@
     justify-content: center;
     align-items: center;
     padding: 1em;
-    margin-left: 2em;
+    margin-left: 1em;
 }
 
 p {
     justify-content: center;
     text-align: center;
-    align-content: flex-end;
+    align-content: center;
     align-items: center;
+    margin: 0;
 }
 
 .redes {
-    width: 1.5em;
+    width: 2em;
+    margin: 0.5em;
 
 }
 
