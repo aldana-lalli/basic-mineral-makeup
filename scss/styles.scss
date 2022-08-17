@@ -1,7 +1,6 @@
 @import "variables";
 @import "nav";
 @import "operators";
-@import "variables";
 @import "footer";
 
 * {
@@ -42,7 +41,7 @@ body {
             display: flex;
             @include flex (row, flex-end, center);
             flex-wrap: wrap;
-            margin: 0 35px 20px 0;
+            margin: 0 25px 5px 0;
         }
         &__nav {
             display: flex;
@@ -62,6 +61,8 @@ body {
     align-items: center;
     justify-content: space-around; 
     flex-wrap: wrap;
+    width: 1.5em;
+    margin: 10px;
     }
 
 .container-fluid {

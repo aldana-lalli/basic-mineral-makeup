@@ -53,8 +53,6 @@
   padding: 30px; }
 
 /* MIXIN */
-/* Colores */
-/* Letras */
 .footer__pie {
   width: 100vw;
   display: flex;
@@ -72,7 +70,7 @@
     align-items: center;
     list-style: none;
     margin-left: 30px;
-    margin-top: 10px; }
+    margin-top: 5px; }
 
 .derechos {
   font-size: small;
@@ -133,7 +131,7 @@ body {
   justify-content: flex-end;
   align-items: center;
   flex-wrap: wrap;
-  margin: 0 35px 20px 0; }
+  margin: 0 25px 5px 0; }
 
 .header__nav {
   display: flex; }
@@ -150,7 +148,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  width: 1.5em;
+  margin: 10px; }
 
 .container-fluid {
   display: flex;
