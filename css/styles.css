@@ -41,7 +41,7 @@
   font-family: "Montserrat", sans-serif;
   font-size: 27px;
   text-align: center;
-  padding: 30px; }
+  margin-top: 30px; }
 
 .border, .ojos__grid .beige, .ojos__grid .rosa-viejo, .ojos__grid .oliva, .ojos__grid .marron, .ojos__grid .celeste-gris, .ojos__grid .rosa, .ojos__grid .bordeaux, .ojos__grid .pinceles, .ojos__grid .violeta, .labios__grid .rosa-mate, .labios__grid .rojo-mate, .labios__grid .marron-mate, .labios__grid .rosa-cremoso, .labios__grid .rojo-cremoso, .labios__grid .nude-cremoso, .labios__grid .coral-pomo, .labios__grid .rojo-pomo, .labios__grid .violeta-pomo, .rostro__grid .tono-claro, .rostro__grid .tono-medio, .rostro__grid .tono-oscuro, .rostro__grid .una-brocha, .rostro__grid .crema-rostro, .rostro__grid .dos-brochas, .pomulos__grid .rubor-naranja, .pomulos__grid .rubor-beige, .pomulos__grid .rubor-fucsia, .pomulos__grid .pomulos-coral, .pomulos__grid .pomulos-beige, .pomulos__grid .pomulos-rosa {
   border: 1px solid black;
@@ -59,7 +59,6 @@
   display: flex;
   align-self: center;
   align-content: center;
-  flex-wrap: wrap;
   justify-content: space-between; }
   .footer__pie--redes {
     display: flex;
@@ -70,9 +69,8 @@
     flex-wrap: wrap;
     align-self: flex-end;
     justify-content: center;
-    padding: 5px;
-    margin-right: 2em;
-    margin-bottom: 0.5em; }
+    margin-right: 1rem;
+    margin-bottom: 0.5rem; }
 
 .derechos {
   font-size: small;
@@ -81,9 +79,14 @@
   padding: 1em;
   margin-left: 2em; }
 
+p {
+  justify-content: center;
+  text-align: center;
+  align-content: flex-end;
+  align-items: center; }
+
 .redes {
-  width: 2em;
-  padding: 5px; }
+  width: 1.5em; }
 
 .h6 {
   font-family: 'Roboto', sans-serif;
@@ -126,7 +129,7 @@ body {
   justify-content: flex-end;
   align-items: center;
   flex-wrap: wrap;
-  margin: 20px; }
+  margin: 0 35px 20px 0; }
 
 .header__nav {
   display: flex; }
@@ -139,12 +142,10 @@ body {
   transform: scale(1.15, 1.15);
   transition: all 0.5s; }
 
-.header .bi {
-  padding: 10px;
-  margin: 10px;
-  display: block;
+.icono {
+  display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap; }
 
 .container-fluid {
@@ -180,6 +181,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-content: center;
   margin: 0 30px 0 30px; }
   .filosofia__titulo {
     font-style: italic; }
@@ -201,7 +203,8 @@ p {
 
 .productos__titulo--items {
   font-family: "Roboto", sans-serif;
-  text-align: center; }
+  text-align: center;
+  margin-top: 30px; }
 
 .color {
   display: flex;
@@ -355,8 +358,8 @@ p {
 
 .preguntas__frecuentes {
   padding: 0px 16px;
-  margin: 30px;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin: 0 25px 0 25px; }
   .preguntas__frecuentes--1 {
     text-align: left; }
   .preguntas__frecuentes--2 {
@@ -448,10 +451,6 @@ p {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(9, 1fr);
     grid-template-areas: "beige"  "rosa-viejo"  "oliva" "marron"  "celeste-gris"  "rosa" "bordeaux"  "pinceles"  "violeta"; }
-  .btn {
-    font-size: 7px;
-    width: 30px;
-    height: 15px; }
   .labios__grid {
     width: 80vw;
     height: 370vh;
@@ -514,10 +513,6 @@ p {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: "beige rosa-viejo oliva" "marron celeste-gris rosa" "bordeaux pinceles violeta"; }
-  .btn {
-    font-size: 0.5rem;
-    width: 40px;
-    height: 18px; }
   .labios__grid {
     width: 100vw;
     height: 120vh;

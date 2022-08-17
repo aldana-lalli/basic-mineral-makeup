@@ -42,7 +42,7 @@ body {
             display: flex;
             @include flex (row, flex-end, center);
             flex-wrap: wrap;
-            margin: 20px;
+            margin: 0 35px 20px 0;
         }
         &__nav {
             display: flex;
@@ -55,14 +55,13 @@ body {
             transform: scale(1.15, 1.15);
             transition: all 0.5s;
         }
-        .bi {
-            padding: 10px;
-            margin: 10px;
-            display: block;
-            align-items: center;
-            justify-content: space-between; 
-            flex-wrap: wrap;
-        }
+    }
+
+.icono {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    flex-wrap: wrap;
     }
 
 .container-fluid {
@@ -105,6 +104,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-content: center;
     margin: 0 30px 0 30px;
 
     &__titulo {
@@ -137,6 +137,7 @@ p {
     &--items {
         font-family: $font-principal;
         text-align: center;
+        margin-top: 30px;
     }
 }
 
@@ -437,8 +438,8 @@ p {
     }
     &__frecuentes {
         padding: 0px 16px;
-        margin: 30px;
         flex-wrap: wrap;
+        margin: 0 25px 0 25px;
     
         &--1 {
             text-align: left;
