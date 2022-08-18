@@ -62,7 +62,7 @@
   align-items: center;
   padding: 10px;
   position: relative;
-  background-image: linear-gradient(to top, #fffefd, #F5E7DA); }
+  background-image: linear-gradient(to top, #fdf6f1, #F5E7DA); }
   .footer__pie--redes {
     display: block;
     justify-content: space-between;
@@ -109,16 +109,16 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   font-family: "Montserrat", sans-serif;
-  font-size: 4.25rem;
+  font-size: calc(1.5em + 1.5vw);
   padding: 20px 0 5px 0;
   text-align: center;
-  background-image: linear-gradient(to top, #F5E7DA, #fff6f0);
+  background-image: linear-gradient(to top, #F5E7DA, #fdf6f1);
   color: #000;
   text-decoration: none; }
 
 .header__subtitulo {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.6rem;
+  font-size: calc(0.6em + 0.6vw);
   padding: 2px 16px;
   text-align: center;
   display: block;
@@ -176,8 +176,7 @@ body {
   flex-wrap: wrap;
   padding: 30px; }
   .principal__portada {
-    width: 800px;
-    height: 600px;
+    width: 100%;
     border: 1px solid black;
     border-radius: 5px; }
 
@@ -443,10 +442,6 @@ p {
 @media (min-width: 320px) and (max-width: 575px) {
   header {
     height: auto; }
-    header__titulo {
-      font-size: 55px; }
-    header__subtitulo {
-      font-size: 19px; }
     header__icono {
       width: 14px; }
     header__nav {
@@ -457,8 +452,7 @@ p {
       font-size: 14px;
       padding: 5px; }
   .principal__portada {
-    width: 300px;
-    height: auto; }
+    width: 100%; }
   .filosofia {
     display: flex; }
     .filosofia__titulo {
@@ -506,10 +500,6 @@ p {
 @media (min-width: 576px) and (max-width: 992px) {
   header {
     height: auto; }
-    header__titulo {
-      font-size: 52px; }
-    header__subtitulo {
-      font-size: 17px; }
     header__icono {
       width: 14px; }
     header__nav {
@@ -521,8 +511,7 @@ p {
       font-size: 14px;
       padding: 5px; }
   .principal__portada {
-    width: 550px;
-    height: auto; }
+    width: 100%; }
   .filosofia__titulo {
     font-size: 18px; }
   .productos__titulo--P {

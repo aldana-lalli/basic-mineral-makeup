@@ -20,16 +20,16 @@ body {
             justify-content: center;
             flex-wrap: wrap;
             font-family: $font-titulo;
-            font-size: 4.25rem;
+            font-size: calc(1.5em + 1.5vw);
             padding: 20px 0 5px 0;
             text-align: center;
-            background-image: linear-gradient(to top, $color-principal, #fff6f0);
+            background-image: linear-gradient(to top, $color-principal, #fdf6f1);
             color: #000;
             text-decoration: none;
         }
         &__subtitulo {
             font-family: $font-titulo;
-            font-size: 1.6rem;
+            font-size: calc(0.6em + 0.6vw);
             padding: 2px 16px;
             text-align: center;
             display: block;
@@ -93,8 +93,7 @@ body {
     padding: 30px;
 
     &__portada {
-        width: 800px;
-        height: 600px;
+        width: 100%;
         border: 1px solid black;
         border-radius: 5px;
     }

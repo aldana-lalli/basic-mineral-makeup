@@ -3,14 +3,6 @@
 @media (min-width: 320px) and (max-width: 575px) {
     header {
     height: auto;
-
-    &__titulo {
-        font-size: 55px;
-        }
-    
-    &__subtitulo {
-        font-size: 19px;
-        }
     
     &__icono {
         width: 14px;
@@ -29,8 +21,7 @@
     }
 
     .principal__portada {
-    width:300px;
-    height: auto;
+    width:100%;
 }
 
     .filosofia {
@@ -127,19 +118,10 @@
 }
 
 
-
 /* MediaQuery de Tablet */
 @media (min-width: 576px) and (max-width: 992px) {
     header {
     height: auto;
-
-    &__titulo {
-        font-size: 52px;
-    }
-
-    &__subtitulo {
-        font-size: 17px;
-    }
 
     &__icono {
         width: 14px;
@@ -160,8 +142,7 @@
 
     .principal {
         &__portada {
-            width: 550px;
-            height: auto;
+            width: 100%;
         }
     }
 
