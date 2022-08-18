@@ -184,10 +184,10 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-content: center;
-  margin: 0 30px 0 30px; }
+  align-content: center; }
   .filosofia__titulo {
-    font-style: italic; }
+    font-style: italic;
+    padding: 20px; }
 
 .imagen {
   border: 1px solid black;
@@ -201,13 +201,18 @@ p {
   align-items: center;
   padding: 0 5px 0 5px; }
 
-.productos__titulo--P {
-  font-style: italic; }
-
-.productos__titulo--items {
-  font-family: "Roboto", sans-serif;
-  text-align: center;
-  margin-top: 30px; }
+.productos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center; }
+  .productos__titulo--P {
+    font-style: italic;
+    padding: 20px; }
+  .productos__titulo--items {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    margin-top: 30px; }
 
 .color {
   display: flex;
@@ -350,33 +355,38 @@ p {
     grid-area: pomulos-rosa;
     background-image: url(../resources/pomulos/rosa-pomo.png); }
 
-.preguntas__titulo {
+.preguntas {
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  padding: 30px; }
-  .preguntas__titulo--Pf {
-    font-family: "Montserrat", sans-serif;
-    font-size: 27px;
-    font-style: italic; }
-
-.preguntas__frecuentes {
-  padding: 0px 16px;
-  flex-wrap: wrap;
-  margin: 0 25px 0 25px; }
-  .preguntas__frecuentes--1 {
-    text-align: left; }
-  .preguntas__frecuentes--2 {
-    text-align: left; }
-  .preguntas__frecuentes--3 {
-    text-align: left; }
+  align-content: center; }
+  .preguntas__titulo {
+    display: flex;
+    justify-content: center;
+    padding: 20px; }
+    .preguntas__titulo--Pf {
+      font-family: "Montserrat", sans-serif;
+      font-size: 27px;
+      font-style: italic; }
+  .preguntas__frecuentes {
+    flex-wrap: wrap;
+    margin: 0 25px 0 25px; }
+    .preguntas__frecuentes--1 {
+      text-align: left; }
+    .preguntas__frecuentes--2 {
+      text-align: left; }
+    .preguntas__frecuentes--3 {
+      text-align: left; }
 
 .contacto {
   display: flex;
-  justify-content: center; }
+  flex-direction: row;
+  justify-content: center;
+  align-content: center; }
   .contacto__titulo {
     display: flex;
     justify-content: center;
-    padding: 30px; }
+    padding: 20px; }
     .contacto__titulo--C {
       font-family: "Montserrat", sans-serif;
       font-size: 27px;

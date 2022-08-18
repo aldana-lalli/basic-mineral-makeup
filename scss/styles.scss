@@ -105,11 +105,11 @@ body {
     flex-direction: row;
     justify-content: center;
     align-content: center;
-    margin: 0 30px 0 30px;
 
     &__titulo {
         @extend .titulos;
         font-style: italic;
+        padding: 20px;
     }
 }
 
@@ -128,16 +128,24 @@ p {
     padding: 0 5px 0 5px;
 }
 
-.productos__titulo {
+.productos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+
+    &__titulo {
     &--P {
         @extend .titulos;
         font-style: italic;
+        padding: 20px;
     }
 
-    &--items {
-        font-family: $font-principal;
-        text-align: center;
-        margin-top: 30px;
+        &--items {
+            font-family: $font-principal;
+            text-align: center;
+            margin-top: 30px;
+        }
     }
 }
 
@@ -425,10 +433,15 @@ p {
 }
 
 .preguntas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+
     &__titulo {
         display: flex;
         justify-content: center;
-        padding: 30px;
+        padding: 20px;
 
         &--Pf {
             font-family: $font-titulo;
@@ -437,7 +450,6 @@ p {
         }
     }
     &__frecuentes {
-        padding: 0px 16px;
         flex-wrap: wrap;
         margin: 0 25px 0 25px;
     
@@ -457,12 +469,15 @@ p {
 
 .contacto {
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    align-content: center;
     
     &__titulo {
         display: flex;
         justify-content: center;
-        padding: 30px;
+        padding: 20px;
+
 
         &--C {
             font-family: $font-titulo;
