@@ -23,7 +23,7 @@ body {
             font-size: 4.25rem;
             padding: 20px 0 5px 0;
             text-align: center;
-            background-image: linear-gradient(to top, $color-principal, white );
+            background-image: linear-gradient(to top, $color-principal, #fff6f0);
             color: #000;
             text-decoration: none;
         }
@@ -61,7 +61,7 @@ body {
     align-items: center;
     justify-content: space-around; 
     flex-wrap: wrap;
-    width: 1.5em;
+    width: 1.4em;
     margin: 10px;
     }
 
@@ -120,6 +120,8 @@ body {
 
 .texto-piel {
     margin-top: 30px;
+    justify-content: center;
+    text-align: justify;
 }
 
 p {
@@ -450,19 +452,20 @@ p {
         }
     }
     &__frecuentes {
+        display: flex;
         flex-wrap: wrap;
-        margin: 0 25px 0 25px;
+        margin: 30px;
     
         &--1 {
-            text-align: left;
+            text-align: center;
         }
         
         &--2 {
-            text-align: left;
+            text-align: center;
         }
         
         &--3 {
-            text-align: left;
+            text-align: center;
         }
     }
 }
@@ -530,6 +533,10 @@ p {
 
 .form-label {
     padding-top: 10px;
+}
+
+.boton-formulario {
+    background-color: #fffaf7;
 }
 
 .form-control {

@@ -61,7 +61,8 @@
   justify-content: center;
   align-items: center;
   padding: 10px;
-  position: relative; }
+  position: relative;
+  background-image: linear-gradient(to top, #fffefd, #F5E7DA); }
   .footer__pie--redes {
     display: block;
     justify-content: space-between;
@@ -87,7 +88,7 @@ p {
   margin: 0; }
 
 .redes {
-  width: 2em;
+  width: 1.6em;
   margin: 0.5em; }
 
 .h6 {
@@ -111,7 +112,7 @@ body {
   font-size: 4.25rem;
   padding: 20px 0 5px 0;
   text-align: center;
-  background-image: linear-gradient(to top, #F5E7DA, white);
+  background-image: linear-gradient(to top, #F5E7DA, #fff6f0);
   color: #000;
   text-decoration: none; }
 
@@ -149,7 +150,7 @@ body {
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
-  width: 1.5em;
+  width: 1.4em;
   margin: 10px; }
 
 .container-fluid {
@@ -194,7 +195,9 @@ body {
   border-radius: 5px; }
 
 .texto-piel {
-  margin-top: 30px; }
+  margin-top: 30px;
+  justify-content: center;
+  text-align: justify; }
 
 p {
   text-align: justify;
@@ -369,14 +372,15 @@ p {
       font-size: 27px;
       font-style: italic; }
   .preguntas__frecuentes {
+    display: flex;
     flex-wrap: wrap;
-    margin: 0 25px 0 25px; }
+    margin: 30px; }
     .preguntas__frecuentes--1 {
-      text-align: left; }
+      text-align: center; }
     .preguntas__frecuentes--2 {
-      text-align: left; }
+      text-align: center; }
     .preguntas__frecuentes--3 {
-      text-align: left; }
+      text-align: center; }
 
 .contacto {
   display: flex;
@@ -428,6 +432,9 @@ p {
 
 .form-label {
   padding-top: 10px; }
+
+.boton-formulario {
+  background-color: #fffaf7; }
 
 .form-control {
   background-color: #fff6f0; }
