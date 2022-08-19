@@ -150,6 +150,7 @@ p {
         &--items {
             font-family: $font-principal;
             text-align: center;
+            margin-top: 10px;
         }
     }
 }
@@ -231,14 +232,17 @@ p {
     
         &--1 {
             text-align: center;
+            margin-bottom: 16px;
         }
         
         &--2 {
             text-align: center;
+            margin-bottom: 16px;
         }
         
         &--3 {
             text-align: center;
+            margin-bottom: 16px;
         }
     }
 }

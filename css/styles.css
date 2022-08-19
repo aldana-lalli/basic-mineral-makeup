@@ -41,7 +41,7 @@
   font-family: "Montserrat", sans-serif;
   font-size: 27px;
   text-align: center;
-  margin-top: 30px; }
+  margin-top: 20px; }
 
 .border {
   border: 1px solid black;
@@ -50,7 +50,7 @@
 .gap, .labios__grid, .ojos__grid, .rostro__grid, .pomulos__grid {
   row-gap: 20px;
   column-gap: 20px;
-  padding: 30px; }
+  padding: 10px; }
 
 /* MIXIN */
 .footer__pie {
@@ -217,7 +217,8 @@ p {
       font-style: italic; }
     .productos__titulo--items {
       font-family: "Roboto", sans-serif;
-      text-align: center; }
+      text-align: center;
+      margin-top: 10px; }
 
 .btn:hover {
   color: #868686;
@@ -270,11 +271,14 @@ p {
     flex-wrap: wrap;
     margin: 30px; }
     .preguntas__frecuentes--1 {
-      text-align: center; }
+      text-align: center;
+      margin-bottom: 16px; }
     .preguntas__frecuentes--2 {
-      text-align: center; }
+      text-align: center;
+      margin-bottom: 16px; }
     .preguntas__frecuentes--3 {
-      text-align: center; }
+      text-align: center;
+      margin-bottom: 16px; }
 
 .contacto {
   display: flex;
@@ -351,9 +355,9 @@ p {
   .filosofia {
     display: flex; }
     .filosofia__titulo {
-      font-size: 16px; }
+      font-size: 18px; }
   .productos__titulo--P {
-    font-size: 16px; }
+    font-size: 18px; }
   .labios__grid {
     width: 80vw;
     grid-template-columns: 1fr;
@@ -375,9 +379,9 @@ p {
     grid-template-rows: repeat(6, 1fr);
     grid-template-areas: "rubor-naranja" "rubor-beige" "rubor-fucsia" "pomulos-coral" "pomulos-beige" "pomulos-rosa"; }
   .preguntas__titulo--Pf {
-    font-size: 16px; }
+    font-size: 18px; }
   .contacto__titulo--C {
-    font-size: 20px; }
+    font-size: 18px; }
   .lista {
     width: 80vw; } }
 
