@@ -106,9 +106,10 @@ body {
     align-content: center;
 
     &__titulo {
+        display: flex;
+        justify-content: center;
         @extend .titulos;
         font-style: italic;
-        padding: 20px;
     }
 }
 
@@ -136,16 +137,19 @@ p {
     align-content: center;
 
     &__titulo {
+        display: flex;
+        justify-content: center;
+        @extend .titulos;
+        font-style: italic;
+
     &--P {
         @extend .titulos;
         font-style: italic;
-        padding: 20px;
     }
 
         &--items {
             font-family: $font-principal;
             text-align: center;
-            margin-top: 30px;
         }
     }
 }
@@ -211,7 +215,8 @@ p {
     &__titulo {
         display: flex;
         justify-content: center;
-        padding: 20px;
+        @extend .titulos;
+        font-style: italic;
 
         &--Pf {
             font-family: $font-titulo;
@@ -247,7 +252,8 @@ p {
     &__titulo {
         display: flex;
         justify-content: center;
-        padding: 20px;
+        @extend .titulos;
+        font-style: italic;
 
 
         &--C {
@@ -308,7 +314,7 @@ p {
 }
 
 .form-control {
-    background-color: #fff6f0;
+    background-color: white;
 }
 
 @import "mediaqueries";

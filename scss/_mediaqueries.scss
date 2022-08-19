@@ -28,14 +28,13 @@
         display: flex;
 
     &__titulo {
-        font-size: 20px;
+        font-size: 16px;
         }
 }
 
     .productos__titulo--P {
-    font-size: 20px;
+    font-size: 16px;
     }
-
 
     .labios__grid {
     width: 80vw;
@@ -89,19 +88,7 @@
 
     .preguntas {
         &__titulo--Pf {
-            font-size: 20px;
-            }
-        
-        &__frecuentes--1 {
-            font-size: small;
-            }
-        
-        &__frecuentes--2 {
-            font-size: small;
-            }
-        
-        &__frecuentes--3 {
-            font-size: small;
+            font-size: 16px;
             }
     }
 
@@ -190,18 +177,6 @@
     .preguntas {
         &__titulo--Pf {
             font-size: 18px;
-            }
-        
-        &__frecuentes--1 {
-            font-size: small;
-            }
-        
-        &__frecuentes--2 {
-            font-size: small;
-            }
-        
-        &__frecuentes--3 {
-            font-size: small;
             }
     }
 

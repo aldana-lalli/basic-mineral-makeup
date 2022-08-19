@@ -37,7 +37,7 @@
   margin-left: auto;
   margin-right: auto; }
 
-.titulos, .filosofia__titulo, .productos__titulo--P {
+.titulos, .filosofia__titulo, .productos__titulo, .productos__titulo--P, .preguntas__titulo, .contacto__titulo {
   font-family: "Montserrat", sans-serif;
   font-size: 27px;
   text-align: center;
@@ -186,8 +186,9 @@ body {
   justify-content: center;
   align-content: center; }
   .filosofia__titulo {
-    font-style: italic;
-    padding: 20px; }
+    display: flex;
+    justify-content: center;
+    font-style: italic; }
 
 .imagen {
   border: 1px solid black;
@@ -208,13 +209,15 @@ p {
   flex-direction: row;
   justify-content: center;
   align-content: center; }
-  .productos__titulo--P {
-    font-style: italic;
-    padding: 20px; }
-  .productos__titulo--items {
-    font-family: "Roboto", sans-serif;
-    text-align: center;
-    margin-top: 30px; }
+  .productos__titulo {
+    display: flex;
+    justify-content: center;
+    font-style: italic; }
+    .productos__titulo--P {
+      font-style: italic; }
+    .productos__titulo--items {
+      font-family: "Roboto", sans-serif;
+      text-align: center; }
 
 .btn:hover {
   color: #868686;
@@ -257,7 +260,7 @@ p {
   .preguntas__titulo {
     display: flex;
     justify-content: center;
-    padding: 20px; }
+    font-style: italic; }
     .preguntas__titulo--Pf {
       font-family: "Montserrat", sans-serif;
       font-size: 27px;
@@ -281,7 +284,7 @@ p {
   .contacto__titulo {
     display: flex;
     justify-content: center;
-    padding: 20px; }
+    font-style: italic; }
     .contacto__titulo--C {
       font-family: "Montserrat", sans-serif;
       font-size: 27px;
@@ -328,7 +331,7 @@ p {
   background-color: #fffaf7; }
 
 .form-control {
-  background-color: #fff6f0; }
+  background-color: white; }
 
 /* MediaQuery de Celular */
 @media (min-width: 320px) and (max-width: 575px) {
@@ -348,9 +351,9 @@ p {
   .filosofia {
     display: flex; }
     .filosofia__titulo {
-      font-size: 20px; }
+      font-size: 16px; }
   .productos__titulo--P {
-    font-size: 20px; }
+    font-size: 16px; }
   .labios__grid {
     width: 80vw;
     grid-template-columns: 1fr;
@@ -372,13 +375,7 @@ p {
     grid-template-rows: repeat(6, 1fr);
     grid-template-areas: "rubor-naranja" "rubor-beige" "rubor-fucsia" "pomulos-coral" "pomulos-beige" "pomulos-rosa"; }
   .preguntas__titulo--Pf {
-    font-size: 20px; }
-  .preguntas__frecuentes--1 {
-    font-size: small; }
-  .preguntas__frecuentes--2 {
-    font-size: small; }
-  .preguntas__frecuentes--3 {
-    font-size: small; }
+    font-size: 16px; }
   .contacto__titulo--C {
     font-size: 20px; }
   .lista {
@@ -426,12 +423,6 @@ p {
     grid-template-areas: "rubor-naranja rubor-beige rubor-fucsia" "pomulos-coral pomulos-beige pomulos-rosa"; }
   .preguntas__titulo--Pf {
     font-size: 18px; }
-  .preguntas__frecuentes--1 {
-    font-size: small; }
-  .preguntas__frecuentes--2 {
-    font-size: small; }
-  .preguntas__frecuentes--3 {
-    font-size: small; }
   .contacto__titulo--C {
     font-size: 18px; }
   .lista {
