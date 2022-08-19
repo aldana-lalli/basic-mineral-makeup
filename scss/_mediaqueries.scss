@@ -36,25 +36,9 @@
     font-size: 20px;
     }
 
-    .ojos__grid {
-    width: 80vw;
-    height: 370vh;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(9, 1fr);
-    grid-template-areas:"beige" 
-                        "rosa-viejo" 
-                        "oliva"
-                        "marron" 
-                        "celeste-gris" 
-                        "rosa"
-                        "bordeaux" 
-                        "pinceles" 
-                        "violeta";
-    }
 
     .labios__grid {
     width: 80vw;
-    height: 370vh;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(9, 1fr);
     grid-template-areas:"rosa-mate" 
@@ -68,9 +52,23 @@
                         "violeta-pomo";
     }
 
+    .ojos__grid {
+        width: 80vw;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9, 1fr);
+        grid-template-areas:"beige" 
+                            "rosa-viejo" 
+                            "oliva"
+                            "marron" 
+                            "celeste-gris" 
+                            "rosa"
+                            "bordeaux" 
+                            "pinceles" 
+                            "violeta";
+        }
+
     .rostro__grid {
     width: 80vw;
-    height: 330vh;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
     grid-template-areas:"tono-claro" 
@@ -83,7 +81,6 @@
 
     .pomulos__grid {
     width: 80vw;
-    height: 320vh;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
     grid-template-areas:"rubor-naranja" "rubor-beige" "rubor-fucsia"
@@ -156,19 +153,8 @@
         font-size: 18px;
     }
 
-    .ojos__grid {
-    width: 100vw;
-    height: 100vh;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas:"beige rosa-viejo oliva"
-                        "marron celeste-gris rosa"
-                        "bordeaux pinceles violeta";
-    }
-
     .labios__grid {
     width: 100vw;
-    height: 120vh;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas:"rosa-mate rojo-mate marron-mate"
@@ -176,9 +162,17 @@
                         "coral-pomo rojo-pomo violeta-pomo";
     }
 
+    .ojos__grid {
+        width: 100vw;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:"beige rosa-viejo oliva"
+                            "marron celeste-gris rosa"
+                            "bordeaux pinceles violeta";
+        }
+
     .rostro__grid {
     width: 100vw;
-    height: 100vh;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas:"tono-claro tono-medio tono-oscuro"
@@ -187,7 +181,6 @@
 
     .pomulos__grid {
     width: 100vw;
-    height: 100vh;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas:"rubor-naranja rubor-beige rubor-fucsia"
