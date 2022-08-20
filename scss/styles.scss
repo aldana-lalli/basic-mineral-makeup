@@ -131,29 +131,25 @@ p {
     padding: 0 5px 0 5px;
 }
 
-.productos {
+.productos__titulo {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-content: center;
 
-    &__titulo {
+    &--P {
         display: flex;
         justify-content: center;
         @extend .titulos;
         font-style: italic;
         font-size: calc(1em + 1vw);
-
-    &--P {
-        @extend .titulos;
-        font-style: italic;
     }
 
-        &--items {
-            font-family: $font-principal;
-            text-align: center;
-            margin-top: 10px;
-        }
+    &--items {
+        justify-content: center;
+        font-family: $font-principal;
+        text-align: center;
+        margin-top: 10px;
     }
 }
 

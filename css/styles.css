@@ -37,7 +37,7 @@
   margin-left: auto;
   margin-right: auto; }
 
-.titulos, .filosofia__titulo, .productos__titulo, .productos__titulo--P, .preguntas__titulo, .contacto__titulo {
+.titulos, .filosofia__titulo, .productos__titulo--P, .preguntas__titulo, .contacto__titulo {
   font-family: "Montserrat", sans-serif;
   font-size: 27px;
   text-align: center;
@@ -205,22 +205,21 @@ p {
   align-items: center;
   padding: 0 5px 0 5px; }
 
-.productos {
+.productos__titulo {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-content: center; }
-  .productos__titulo {
+  .productos__titulo--P {
     display: flex;
     justify-content: center;
     font-style: italic;
     font-size: calc(1em + 1vw); }
-    .productos__titulo--P {
-      font-style: italic; }
-    .productos__titulo--items {
-      font-family: "Roboto", sans-serif;
-      text-align: center;
-      margin-top: 10px; }
+  .productos__titulo--items {
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    margin-top: 10px; }
 
 .btn:hover {
   color: #868686;
