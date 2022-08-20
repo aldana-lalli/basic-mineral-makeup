@@ -145,6 +145,12 @@ body {
   transform: scale(1.15, 1.15);
   transition: all 0.5s; }
 
+.header__titulo a {
+  color: black; }
+
+.header__subtitulo a {
+  color: black; }
+
 .icono {
   display: flex;
   align-items: center;
@@ -374,7 +380,7 @@ p {
     width: 80vw;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
-    grid-template-areas: "rubor-naranja" "rubor-beige" "rubor-fucsia" "pomulos-coral" "pomulos-beige" "pomulos-rosa"; }
+    grid-template-areas: "rubor-naranja"  "rubor-beige"  "rubor-fucsia" "pomulos-coral"  "pomulos-beige"  "pomulos-rosa"; }
   .lista {
     width: 80vw; } }
 

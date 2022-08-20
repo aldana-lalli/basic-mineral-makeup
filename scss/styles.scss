@@ -15,46 +15,54 @@ body {
 
 /* Encabezado */
 .header {
-        &__titulo {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            font-family: $font-titulo;
-            font-size: calc(1.5em + 1.5vw);
-            padding: 20px 0 5px 0;
-            text-align: center;
-            background-image: linear-gradient(to top, $color-principal, #fdf6f1);
-            color: black;
-            text-decoration: none;
-        }
-        &__subtitulo {
-            font-family: $font-titulo;
-            font-size: calc(0.6em + 0.6vw);
-            padding: 2px 16px;
-            text-align: center;
-            display: block;
-            color: #000;
-            text-decoration: none;
-        }
-        &__acciones {
-            list-style: none;
-            display: flex;
-            @include flex (row, flex-end, center);
-            flex-wrap: wrap;
-            margin: 0 25px 5px 0;
-        }
-        &__nav {
-            display: flex;
-        }
-        &__menu {
-            color: #000;
-            font-weight: bolder;
-        }
-        &__menu:hover {
-            transform: scale(1.15, 1.15);
-            transition: all 0.5s;
-        }
+    &__titulo {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        font-family: $font-titulo;
+        font-size: calc(1.5em + 1.5vw);
+        padding: 20px 0 5px 0;
+        text-align: center;
+        background-image: linear-gradient(to top, $color-principal, #fdf6f1);
+        color: black;
+        text-decoration: none;
     }
+    &__subtitulo {
+        font-family: $font-titulo;
+        font-size: calc(0.6em + 0.6vw);
+        padding: 2px 16px;
+        text-align: center;
+        display: block;
+        color: #000;
+        text-decoration: none;
+    }
+    &__acciones {
+        list-style: none;
+        display: flex;
+        @include flex (row, flex-end, center);
+        flex-wrap: wrap;
+        margin: 0 25px 5px 0;
+    }
+    &__nav {
+        display: flex;
+    }
+    &__menu {
+        color: #000;
+        font-weight: bolder;
+    }
+    &__menu:hover {
+        transform: scale(1.15, 1.15);
+        transition: all 0.5s;
+    }
+}
+
+.header__titulo a {
+    color: black;
+}
+
+.header__subtitulo a {
+    color: black;
+}
 
 .icono {
     display: flex;
@@ -228,7 +236,7 @@ p {
         display: flex;
         flex-wrap: wrap;
         margin: 30px;
-    
+
         &--1 {
             text-align: center;
             margin-bottom: 16px;
@@ -306,7 +314,7 @@ p {
 
 .img__fluid {   
     height: auto;
-    }
+}
 
 .form-label {
     padding-top: 10px;

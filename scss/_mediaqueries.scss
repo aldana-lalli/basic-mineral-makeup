@@ -70,10 +70,13 @@
     width: 80vw;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
-    grid-template-areas:"rubor-naranja" "rubor-beige" "rubor-fucsia"
-                        "pomulos-coral" "pomulos-beige" "pomulos-rosa";
+    grid-template-areas:"rubor-naranja" 
+                        "rubor-beige" 
+                        "rubor-fucsia"
+                        "pomulos-coral" 
+                        "pomulos-beige" 
+                        "pomulos-rosa";
     }
-
 
     .lista {
     width: 80vw;
