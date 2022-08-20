@@ -24,18 +24,6 @@
     width:100%;
 }
 
-    .filosofia {
-        display: flex;
-
-    &__titulo {
-        font-size: 18px;
-        }
-}
-
-    .productos__titulo--P {
-    font-size: 18px;
-    }
-
     .labios__grid {
     width: 80vw;
     grid-template-columns: 1fr;
@@ -86,15 +74,6 @@
                         "pomulos-coral" "pomulos-beige" "pomulos-rosa";
     }
 
-    .preguntas {
-        &__titulo--Pf {
-            font-size: 18px;
-            }
-    }
-
-    .contacto__titulo--C {
-    font-size: 18px;
-    }
 
     .lista {
     width: 80vw;

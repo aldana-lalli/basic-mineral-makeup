@@ -113,7 +113,7 @@ body {
   padding: 20px 0 5px 0;
   text-align: center;
   background-image: linear-gradient(to top, #F5E7DA, #fdf6f1);
-  color: #000;
+  color: black;
   text-decoration: none; }
 
 .header__subtitulo {
@@ -176,7 +176,7 @@ body {
   flex-wrap: wrap;
   padding: 30px; }
   .principal__portada {
-    width: 100%;
+    width: 80%;
     border: 1px solid black;
     border-radius: 5px; }
 
@@ -188,7 +188,8 @@ body {
   .filosofia__titulo {
     display: flex;
     justify-content: center;
-    font-style: italic; }
+    font-style: italic;
+    font-size: calc(1em + 1vw); }
 
 .imagen {
   border: 1px solid black;
@@ -212,7 +213,8 @@ p {
   .productos__titulo {
     display: flex;
     justify-content: center;
-    font-style: italic; }
+    font-style: italic;
+    font-size: calc(1em + 1vw); }
     .productos__titulo--P {
       font-style: italic; }
     .productos__titulo--items {
@@ -261,7 +263,8 @@ p {
   .preguntas__titulo {
     display: flex;
     justify-content: center;
-    font-style: italic; }
+    font-style: italic;
+    font-size: calc(1em + 1vw); }
     .preguntas__titulo--Pf {
       font-family: "Montserrat", sans-serif;
       font-size: 27px;
@@ -288,7 +291,8 @@ p {
   .contacto__titulo {
     display: flex;
     justify-content: center;
-    font-style: italic; }
+    font-style: italic;
+    font-size: calc(1em + 1vw); }
     .contacto__titulo--C {
       font-family: "Montserrat", sans-serif;
       font-size: 27px;
@@ -352,12 +356,6 @@ p {
       padding: 5px; }
   .principal__portada {
     width: 100%; }
-  .filosofia {
-    display: flex; }
-    .filosofia__titulo {
-      font-size: 18px; }
-  .productos__titulo--P {
-    font-size: 18px; }
   .labios__grid {
     width: 80vw;
     grid-template-columns: 1fr;
@@ -378,10 +376,6 @@ p {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
     grid-template-areas: "rubor-naranja" "rubor-beige" "rubor-fucsia" "pomulos-coral" "pomulos-beige" "pomulos-rosa"; }
-  .preguntas__titulo--Pf {
-    font-size: 18px; }
-  .contacto__titulo--C {
-    font-size: 18px; }
   .lista {
     width: 80vw; } }
 
